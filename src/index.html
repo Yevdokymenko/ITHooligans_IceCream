@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--Додаємо шрифти-->
@@ -27,17 +28,29 @@
     <!-- Додаємо фавікон -->
     <link rel="icon" type="image/x-icon" href="./images/icons/cone.ico" />
 
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <!-- <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script> -->
   </head>
   <body>
-    <include src="./partials/heroheader.html"></include>
-    <include src="./partials/products.html"></include>
-    <include src="./partials/about.html"></include>
-    <include src="./partials/advantages.html"></include>
-    <include src="./partials/gallery.html"></include>
-    <include src="./partials/customer-reviews.html"></include>
-    <include src="./partials/contacts.html"></include>
-    <include src="./partials/footer.html"></include>
+    <header>
+      <include src="./partials/heroheader.html"></include>
+      <include src="./partials/mobile-menu.html"></include>
+    </header>
+    <main>
+      <include src="./partials/products.html"></include>
+      <include src="./partials/about.html"></include>
+      <include src="./partials/advantages.html"></include>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/customer-reviews.html"></include>
+      <include src="./partials/contacts.html"></include>
+    </main>
+    <footer>
+      <include src="./partials/footer.html"></include>
+    </footer>
+
+    <!-- Модальне вікно -->
+    <include src="./partials/modal.html"></include>
+
+    <!-- Компоненти JS -->
   </body>
 </html>
