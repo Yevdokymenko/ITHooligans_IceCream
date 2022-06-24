@@ -1,0 +1,66 @@
+// products style mob version
+
+@media screen and (min-width:320px){
+    .products__label{
+        font-size: 18px;
+        font-family: 'Titan One', sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 1.67;
+        text-align: center;
+        color: var(--secondary-pink-text-color);
+    } 
+    
+    .container-products__title {
+        font-size: 34px;
+        font-family: 'Titan One', sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: var(--products-title);
+     }
+
+     .products-item__title {
+        font-size: 20px;
+        font-family: 'Titan One', sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: var(--white-text-color);
+     }
+
+     .products-item__description{
+        font-size: 14px;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        line-height: 1.52;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: var(--white-text-color);
+     }
+
+}
+
+@media screen and (max-width:767px){
+
+}
+
+// products style tablet version
+
+@media screen and (min-width:768px){
+
+}
+
+@media screen and (min-width:768px) and (max-width:1199px){
+
+}
+
+// products style desktop version
+
+@media screen and (min-width:1200px){
+
+}
