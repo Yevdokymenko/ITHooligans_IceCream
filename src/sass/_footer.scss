@@ -1,0 +1,117 @@
+.page-footer {
+    background-color: #FFF5F6;
+}
+
+.page-footer__title {
+    margin-bottom: 40px;
+}
+
+.page-footer__container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.page-footer__title--little {
+    font-size: 18px;
+    line-height: 1.17;
+    text-transform: uppercase;
+
+    color: #FFA5BA;
+    margin-bottom: 16px;
+}
+
+.page-footer__title--big {
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #D41443;
+}
+
+.socials__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.socials__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: red;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials__link:hover,
+.socials__link:focus {
+    background-color: red;
+    fill: white;
+}
+
+.socials__item:not(:last-child) {
+    margin-right: 28px;
+}
+
+.socials__icon {
+    fill: white;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials__link:hover .socials__icon,
+.socials__link:focus .socials__icon {
+    fill: red;
+}
+
+
+
+.contact-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-box__text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+    text-align: right;
+
+    color: #000000;
+}
+
+.contact-box__phone {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+    text-align: right;
+
+    color: #D41443;
+}
+
+.site-rights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #E1E1E1;
+}
+
+.site-rights__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+
+    color: #907E82;
+
+    padding-top: 16px;
+    padding-bottom: 3px;
+    max-width: 150px;
+}
