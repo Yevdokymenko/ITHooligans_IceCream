@@ -1,8 +1,7 @@
 @charset "UTF-8";
 @import '~node_modules/modern-normalize/modern-normalize.css';
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0 auto;
   font-family: "DM Sans", sans-serif;
   font-family: "Titan One", cursive;
@@ -103,8 +102,7 @@ li {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
