@@ -4,10 +4,12 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0 auto;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Titan One", cursive;
 }
 
 body {
-  font-family: DM Sans;
+  font-family: "DM Sans", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 27px;
