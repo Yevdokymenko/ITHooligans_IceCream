@@ -121,6 +121,147 @@ li {
   --btn-hover-color: rgba(236, 235, 235, 1);
   --btn-active-color: rgba(212, 19, 66, 1);
   --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --bg-color-third-pink: rgba(240, 209, 165, 1);
+  --bg-color-green: rgba(194, 226, 151, 1);
+  --grey-border-color: rgba(225, 225, 225, 1);
+}
+
+.contacts {
+  margin-bottom: 40px;
+  background: linear-gradient var(--white-text-color) 25%, var(--bg-color-secondary-pink) 75%;
+}
+
+.contacts__card {
+  margin-bottom: 32px;
+}
+
+.contacts__list {
+  width: 280px;
+  margin-bottom: 20px;
+  padding: 40px 32px;
+  -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+          box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+.contacts__list:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__cell {
+  margin-bottom: 24px;
+}
+
+.contacts__cell:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__cafe {
+  width: 40%;
+  background-color: var(--bg-color-third-pink);
+  border-radius: 4px;
+  color: var(--white-text-color);
+  padding-top: 0;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+}
+
+.contacts__foodtruck {
+  width: 60%;
+  background-color: var(--bg-color-green);
+  border-radius: 4px;
+  color: var(--white-text-color);
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+}
+
+.contacts__city {
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: var(--black-text-color);
+  margin-bottom: 8px;
+}
+
+.contacts__text {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--grey-text-color);
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--grey-border-color);
+}
+
+.contacts__working-hours-list {
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--grey-border-color);
+}
+
+.contacts__working-hours {
+  margin-bottom: 8px;
+}
+
+.contacts__working-hours:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__day {
+  font-size: 12px;
+  line-height: 1.86;
+  color: var(--black-text-color);
+}
+
+.contacts__text {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--grey-text-color);
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--grey-border-color);
+}
+
+.contacts__time {
+  font-size: 12px;
+  line-height: 1.86;
+  color: var(--secondary-pink-text-color);
+}
+
+.contacts__tel-email {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--grey-text-color);
+}
+
+.contacts__button {
+  width: 55%;
+  height: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  border-radius: 22px;
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  margin-bottom: 10px;
+}
+
+.contacts__button:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__button-red {
+  background-color: var(--btn-active-color);
+  color: var(--white-text-color);
+}
+
+.contacts__button-white {
+  background-color: var(--white-text-color);
+  color: var(--pink-text-color);
 }
 
 .page-footer {
@@ -254,4 +395,48 @@ li {
   padding-top: 16px;
   padding-bottom: 3px;
   max-width: 150px;
+}
+
+@media screen and (min-width: 320px) {
+  .products__label {
+    font-size: 18px;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.67;
+    text-align: center;
+    color: var(--secondary-pink-text-color);
+  }
+
+  .container-products__title {
+    font-size: 34px;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: rgb(212, 20, 67);
+  }
+
+  .products-item__title {
+    font-size: 20px;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--white-text-color);
+  }
+
+  .products-item__description {
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    line-height: 1.52;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--white-text-color);
+  }
 }/*# sourceMappingURL=index.css.map */
