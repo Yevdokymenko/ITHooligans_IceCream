@@ -1,14 +1,22 @@
 .contacts {
-    margin-bottom: 40px;
-    background: linear-gradient (var(--white-text-color) 25%, var(--bg-color-secondary-pink) 75%);
+    padding-bottom: 40px;
+    background-image: linear-gradient(var(--white-text-color) 20%, var(--bg-color-secondary-pink) 20%);
+
 }
 
 .contacts__card {
     margin-bottom: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
 }
 
 
 .contacts__list {
+    background-color: var(--white-text-color);
     width: 280px;
     margin-bottom: 20px;
     padding: 40px 32px;
@@ -133,6 +141,7 @@ color: var(--grey-text-color);
 .contacts__button {
 width: 55%;
 height: 44px;
+cursor: pointer;
 
 margin-left: auto;
 margin-right: auto;
@@ -141,8 +150,9 @@ border: 0;
 border-radius: 22px;
 
 
-
-display: block;
+display: flex;
+align-items: center;
+justify-content: center;
 
 font-weight: 700;
 font-size: 16px;
@@ -155,6 +165,11 @@ margin-bottom: 10px;
 margin-bottom: 0;
 }
 
+.contacts__button-text {
+margin-right: 8px;
+
+}
+
 .contacts__button-red {
     background-color: var(--btn-active-color);
     color: var(--white-text-color);
@@ -164,3 +179,4 @@ margin-bottom: 0;
     background-color: var(--white-text-color);
     color: var(--pink-text-color)
 }
+
