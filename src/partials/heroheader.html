@@ -1,1 +1,190 @@
-<h1>Тут буде хедер</h1>
+<header class="header">
+    <div class="container header__container">
+        <a href="" class="logo">
+            <svg width="199" height="50">
+                <use href="./images/sprite.svg#icon-logo-color"></use>
+            </svg>
+        </a>
+
+        <button class="menu__icon" type="button">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+        </button>
+
+        <div class="menu">
+
+            <button class="menu-btn" type="button">Buy now <svg class="menu-btn__icon" width="10" height="15">
+                    <use href="./images/sprite.svg#icon-icon-arrow"></use>
+                </svg></button>
+
+            <nav class="nav">
+                <ul class="nav__list list">
+                    <li class="nav__item"><a href="#hero" class="nav__link link nav__link--accent">Home</a></li>
+                    <li class="nav__item"><a href="#reviews" class="nav__link link">About us</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link link">How it’s made?</a></li>
+                    <li class="nav__item"><a href="#products" class="nav__link link">Our products</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+</header>
+
+<section class="hero" id="hero">
+    <div class="container hero__container">
+        <h1 class="hero__title">ice cream <br> made with <br> <span class="accent--title">passion</span></h1>
+
+        <ul class="hero__list list">
+            <li class="hero__item"><a href="#products" class="hero__btn link hero__btn--first">Products</a></li>
+            <li class="hero__item"><a href="#about" class="hero__btn link hero__btn--last">How it’s made?</a></li>
+        </ul>
+
+
+<div class="hero__extra">
+            <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et</p>
+                <button class="hero__btn--more" type="button">
+                    <svg class="menu-btn__icon" width="20" height="40">
+                    <use href="./images/sprite.svg#icon-icon-arrow"></use>
+                    </svg></button>
+</div>
+
+<ul class="hero__amount-list">
+    <li class="hero__amount-item">
+<p class="hero__amount">16</p>
+<p class="hero__amount--label">cafes</p>
+    </li>
+    <li class="hero__amount-item">
+<p class="hero__amount">23</p>
+<p class="hero__amount--label">food trucks</p>
+    </li>
+</ul>
+
+            <!-- Фоновый круг -->
+        <picture class="hero__img--ellipse">
+                <!-- для мобильного -->
+            <source media="(max-width: 479px)"
+                srcset="./images/mobile/mobile-main-ellipse.webp 1x, images/mobile/mobile-main-ellipse@2x.webp 2x"
+                type="image/webp">
+
+            <source media="(max-width: 479px)"
+                srcset="./images/mobile/mobile-main-ellipse.png 1x, images/mobile/mobile-main-ellipse@2x.png 2x"
+                type="image/png">
+
+                <!-- для планшета -->
+            <source media="(min-width: 480px)"
+                srcset="./images/tablet/tablet-ellipse-pink.webp 1x, images/tablet/tablet-ellipse-pink@2x.webp 2x"
+                type="image/webp">
+
+            <source media="(min-width: 480px)"
+                srcset="./images/tablet/tablet-ellipse-pink.png 1x, images/tablet/tablet-ellipse-pink@2x.png 2x"
+                type="image/png">
+
+                <!-- для ноута -->
+            <!-- <source media="(min-width: 768px)"
+                srcset="./images/laptop/laptop-header-slider.webp 1x, images/laptop/laptop-header-slider@2x.webp 2x"
+                type="image/webp">
+
+            <source media="(min-width: 768px)"
+                srcset="./images/laptop/laptop-header-slider.png 1x, images/laptop/laptop-header-slider@2x.png 2x"
+                type="image/png">  -->
+
+            <img src="./images/mobile/mobile-main-ellipse.png" alt="Постер работы">
+        </picture>
+
+            <!-- Фоновое мороженное -->
+        <picture class="hero__img--ice">
+                <!-- для мобильного -->
+            <source media="(max-width: 479px)"
+                srcset="./images/mobile/mobile-header-slider.webp 1x, images/mobile/mobile-header-slider@2x.webp 2x"
+                type="image/webp">
+
+            <source media="(max-width: 479px)"
+                srcset="./images/mobile/mobile-header-slider.png 1x, images/mobile/mobile-header-slider@2x.png 2x"
+                type="image/png">
+
+                <!-- для планшета -->
+            <source media="(min-width: 480px)"
+                    srcset="./images/tablet/tablet-header-slider.webp 1x, images/tablet/tablet-header-slider@2x.webp 2x"
+                    type="image/webp">
+                
+            <source media="(min-width: 480px)"
+                    srcset="./images/tablet/tablet-header-slider.png 1x, images/tablet/tablet-header-slider@2x.png 2x" 
+                    type="image/png">
+
+                <!-- для ноута -->
+            <source media="(min-width: 768px)"
+                    srcset="./images/laptop/laptop-header-slider.webp 1x, images/laptop/laptop-header-slider@2x.webp 2x"
+                    type="image/webp">
+                
+            <source media="(min-width: 768px)"
+                    srcset="./images/laptop/laptop-header-slider.png 1x, images/laptop/laptop-header-slider@2x.png 2x" 
+                    type="image/png">
+
+            <img src="./images/mobile/mobile-header-slider.png" alt="Постер работы">
+        </picture>
+
+            <!-- Фоновое вкусно -->
+        <picture class="hero__img--tasty">
+                <!-- для планшета -->
+            <source media="(min-width: 768px)"
+                srcset="./images/tablet/tablet-girl.webp 1x, images/tablet/tablet-girl@2x.webp 2x"
+                type="image/webp">
+                    
+            <source media="(min-width: 768px)"
+                srcset="./images/tablet/tablet-girl.png 1x, images/tablet/tablet-girl@2x.png 2x"
+                type="image/png">
+                    
+                <!-- для ноута -->
+            <source media="(min-width: 1200px)"
+                srcset="./images/laptop/laptop-girl.webp 1x, images/laptop/laptop-girl@2x.webp 2x"
+                type="image/webp">
+                    
+            <source media="(min-width: 1200px)"
+                srcset="./images/laptop/laptop-girl.png 1x, images/laptop/laptop-girl@2x.png 2x"
+                type="image/png">
+                    
+            <img src="./images/tablet/tablet-girl.png" alt="Постер работы">
+        </picture>
+
+            <!-- Фоновое графин с молоком-->
+        <picture class="hero__img--milk">
+                <!-- для планшета -->
+            <source media="(min-width: 768px)"
+                srcset="./images/tablet/tablet-milk.webp 1x, images/tablet/tablet-milk@2x.webp 2x"
+                type="image/webp">
+                    
+            <source media="(min-width: 768px)"
+                srcset="./images/tablet/tablet-milk.png 1x, images/tablet/tablet-milk@2x.png 2x"
+                type="image/png">
+ 
+                <!-- для ноута -->
+            <source media="(min-width: 1200px)"
+                srcset="./images/laptop/laptop-milk.webp 1x, images/laptop/laptop-milk@2x.webp 2x"
+                type="image/webp">
+                    
+            <source media="(min-width: 1200px)"
+                srcset="./images/laptop/laptop-milk.png 1x, images/laptop/laptop-milk@2x.png 2x"
+                type="image/png">
+                    
+            <img src="./images/tablet/tablet-milk.png" alt="Постер работы">
+        </picture>
+
+
+    </div>
+</section>
+<script>
+    //   Кнопка меню
+
+    const iconMenu = document.querySelector('.menu__icon');
+    const menu = document.querySelector('.menu');
+    if (iconMenu) {
+        iconMenu.addEventListener("click", function (e) {
+            document.body.classList.toggle('_lock');
+            iconMenu.classList.toggle('_active');
+            menu.classList.toggle('_active');
+        });
+    }
+</script>
