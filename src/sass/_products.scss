@@ -135,9 +135,25 @@
     margin-bottom: 40px;
     }
 
-    .producst__dots {
-    display: flex;
+    .products__dots {
+    position: relative;
     }
+
+    .products__dots::before{
+        position: absolute;
+            top: 50%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            content: url(../images/icons/icon-ellipse-white.svg);
+    }
+
+    .products__dots::after {
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        content: url(../images/icons/icon-ellipse-white.svg);
+        }
 
     .dots__icon{
     fill: var(--white-text-color);
