@@ -5,6 +5,7 @@ html {
   margin: 0 auto;
   font-family: 'DM Sans', sans-serif;
   font-family: 'Titan One', cursive;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -30,21 +31,19 @@ a:focus {
 .container {
   width: 100%;
   min-width: 320px;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
+  padding: 0;
+  max-width: 440px;
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    width: 700px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    width: 1050px;
   }
 }
 
