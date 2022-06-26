@@ -62,3 +62,58 @@
     line-height: 23px;
   }
 }
+
+//Franchise
+
+.backdrop-franchise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--modal-window-bg);
+
+  &.sr-only {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.modal-franchise {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+
+  width: calc(100% - 40px);
+
+  background-color: var(--bg-color-pink);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.close-btn-franchise {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  cursor: pointer;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--white-text-color);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+}
+
+.close-btn-franchise .close-btn-franchise__icon {
+  stroke: var(--pink-text-color);
+}

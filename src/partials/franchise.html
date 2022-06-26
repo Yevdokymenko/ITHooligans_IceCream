@@ -1,0 +1,58 @@
+<!--Franchise---------------------------------------------------------->
+
+<div class="backdrop-franchise sr-only" data-modal-franchise>
+<div class="modal-franchise">
+<button type="button" class="close-btn-franchise" data-modal-franchise-close>
+  <svg width="20" height="20" class="close-btn-franchise__icon">
+    <use href="./images/sprite.svg#icon-icon-close"></use>
+  </svg>
+</button>
+<!--Заголовок формы-->
+<h2>Become our franchisee! Fill out the form</h2>
+<form>
+  <!--Name input-->
+  <label>
+    <span>Name</span>
+    <input  type="text" name="user-name" required>
+    <svg  width="18" height="18">
+      <use></use>
+    </svg>
+  </label>
+  <!--Phone input-->
+  <label>
+    <span>Phone</span>
+    <input  type="phone" name="user-phone" required>
+    <svg  width="18" height="18">
+      <use></use>
+    </svg>
+  </label>
+  <!--Email input-->
+  <label>
+    <span>Email</span>
+    <input  type="mail" name="user-mail" required>
+    <svg  width="18" height="18">
+      <use></use>
+    </svg>
+  </label>
+  <!--Checkbox-->
+  <label>
+    <input  type="checkbox" name="checkbox" required>
+    <span >
+      <svg  width="11" height="8">
+        <use></use>
+      </svg>
+    </span>
+    <span >Соглашаюсь с рассылкой и принимаю
+    <a href="#">Условия договора</a>
+    </span>
+  </label>
+  <!--Dropdown menu-->
+  <label>Franchise type
+<select name="franchise-type">
+  <option value="CAFE">CAFE</option>
+  <option value="FOODTRUCK">FOODTRUCK</option>
+</select>
+</label>
+</form>
+</div>
+</div> <script src="./js/modal-franchise.js"></script>
