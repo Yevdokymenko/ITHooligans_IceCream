@@ -47,6 +47,16 @@ a:focus {
   }
 }
 
+.section {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 address {
   font-style: normal;
 }
