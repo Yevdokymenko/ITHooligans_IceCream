@@ -75,10 +75,10 @@ body._lock {
     transition: transform 300ms ease,
         rotate 300ms ease,
         scale 200ms ease;
-        
-        &:hover {
-                transform: scale(1.4);
-        }
+
+    &:hover {
+        transform: scale(1.4);
+    }
 }
 
 .menu__icon._active {
@@ -86,8 +86,8 @@ body._lock {
     height: 14px;
     right: 5%;
     transition: transform 300ms ease,
-            rotate 300ms ease,
-            scale 200ms ease;
+        rotate 300ms ease,
+        scale 200ms ease;
 }
 
 .line {
@@ -178,10 +178,12 @@ body._lock {
         margin-right: 0;
         margin-bottom: 0;
     }
+
     .menu__icon {
         top: 0;
         left: 38%;
     }
+
     .menu__icon._active {
         position: absolute;
         top: 30px;
@@ -196,9 +198,11 @@ body._lock {
         padding-left: 37px;
         padding-right: 37px;
     }
+
     .menu__icon {
         display: none;
     }
+
     .nav__item:last-child {
         margin-right: 0;
     }
@@ -238,11 +242,11 @@ body._lock {
     color: var(--white-text-color);
 
     transition: transform 200ms ease;
-        
-            &:hover {
-                font-size: 16px;
-                color: var(--pink-text-color);
-            }
+
+    &:hover {
+        font-size: 16px;
+        color: var(--pink-text-color);
+    }
 
     @media screen and (min-width: 1200px) {
         font-size: 16px;
@@ -271,16 +275,17 @@ body._lock {
     position: relative;
     padding-top: 58px;
     padding-bottom: 158px;
-    z-index: 1; 
+    z-index: 1;
 
-        @media screen and (min-width: 768px) {
-                padding-bottom: 56px;
-                padding-top: 80px;
-            }
-        @media screen and (min-width: 1200px) {
-                padding-bottom: 84px;
-                padding-top: 147px;
-            }
+    @media screen and (min-width: 768px) {
+        padding-bottom: 56px;
+        padding-top: 80px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 84px;
+        padding-top: 147px;
+    }
 }
 
 .hero__basic {
@@ -309,9 +314,10 @@ body._lock {
         font-size: 22px;
         line-height: 1.14;
     }
+
     @media screen and (min-width: 1200px) {
         font-size: 38px;
-        line-height:1.16;
+        line-height: 1.16;
     }
 }
 
@@ -324,6 +330,7 @@ body._lock {
         font-size: 34px;
         line-height: 0.91;
     }
+
     @media screen and (min-width: 1200px) {
         font-size: 58px;
         line-height: 0.9;
@@ -355,35 +362,37 @@ body._lock {
     line-height: 1.25;
 
     transition: transform 250ms ease, border 200ms ease, color 200ms ease, background-color 200ms ease;
-        
-        &:hover {
-            transform: scale(1.1);
-            border: 2px solid var(--btn-active-color);
-        }
+
+    &:hover {
+        transform: scale(1.1);
+        border: 2px solid var(--btn-active-color);
+    }
 
     @media screen and (min-width: 1200px) {
         font-size: 14px;
         line-height: 1.29;
         padding: 11px 23px;
-    }    
+    }
 }
 
 .hero__btn--first {
     color: var(--white-text-color);
     background-color: var(--btn-active-color);
-        &:hover {     
-            color: var(--pink-text-color);
-            background-color: var(--btn-static-color);
-            border: 2px solid var(--btn-active-color);
-        }
+
+    &:hover {
+        color: var(--pink-text-color);
+        background-color: var(--btn-static-color);
+        border: 2px solid var(--btn-active-color);
+    }
 }
 
 .hero__btn--last {
     color: var(--pink-text-color);
     background-color: var(--btn-static-color);
-        &:hover {         
-            border: 2px solid var(--btn-active-color);
-        }
+
+    &:hover {
+        border: 2px solid var(--btn-active-color);
+    }
 }
 
 //  ********** Фоновое графин с молоком **********
@@ -403,17 +412,17 @@ body._lock {
     background-image: url(../images/tablet/tablet-milk.png);
 
     @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/tablet/tablet-milk@2x.png);
-        }
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../images/tablet/tablet-milk@2x.png);
+    }
 
     @media screen and (min-width: 1200px) {
         width: 213px;
         height: 216px;
 
         background-image: url(../images/laptop/laptop-milk.png);
-                
+
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -445,16 +454,16 @@ body._lock {
     }
 
     @media screen and (min-width: 1200px) {
-    width: 304px;
-    height: 241px;
+        width: 304px;
+        height: 241px;
 
-    background-image: url(../images/laptop/laptop-girl.png);
+        background-image: url(../images/laptop/laptop-girl.png);
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url(../images/laptop/laptop-girl@2x.png);
-    }
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/laptop/laptop-girl@2x.png);
+        }
     }
 }
 
@@ -470,6 +479,7 @@ body._lock {
         display: block;
         left: 20%;
     }
+
     @media screen and (min-width: 1200px) {
         width: 200px;
     }
@@ -501,18 +511,10 @@ body._lock {
     border: none;
     background-size: cover;
     cursor: pointer;
-    border: 2px solid transparent;
-
-        transition: transform 300ms ease, border 300ms ease;
-        
-            &:hover {
-                transform: scale(1.4);
-                border: 2px solid var(--btn-active-color);
-            }
 
     @media screen and (min-width: 1200px) {
-            width: 26px;
-            height: 26px;
+        width: 26px;
+        height: 26px;
     }
 }
 
@@ -606,10 +608,10 @@ body._lock {
     text-transform: uppercase;
     color: var(--pink-text-color);
 
-        @media screen and (min-width: 1200px) {
-            font-size: 46px;
-            line-height: 1.15;
-        }
+    @media screen and (min-width: 1200px) {
+        font-size: 46px;
+        line-height: 1.15;
+    }
 }
 
 .hero__amount--label {
