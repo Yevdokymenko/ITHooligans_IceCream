@@ -60,5 +60,10 @@
     <symbol id="icon-icon-right-pink" viewBox="0 0 26 32">
       <path stroke-linejoin="round" stroke-linecap="round" stroke="rgba(212, 20, 67, 1)" stroke-width="6.4" d="M5.172 3.2 19.341 16 5.172 28.8"/>
     </symbol>
+    <symbol id="icon-3-dots" viewBox="0 0 256 32">
+<path fill="#c7133e" style="fill: var(--color1, #c7133e)" d="M144 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+<path fill="#c7133e" style="fill: var(--color1, #c7133e)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+<path fill="#c7133e" style="fill: var(--color1, #c7133e)" d="M256 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+</symbol>
   </defs>
 </svg>
