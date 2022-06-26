@@ -1,0 +1,48 @@
+.section-advantages {
+  background-color: var(--bg-color-secondary-pink);
+  padding-bottom: 28px;
+  padding-top: 40px;
+}
+.section-advantages__point {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  width: 98px;
+  height: 56px;
+  padding-top: 16px;
+  color: var(--pink-text-color);
+}
+
+.section-advantages__text {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 170%;
+  width: 230px;
+  padding-top: 4px;
+  padding-bottom: 32px;
+  /* or 20px */
+
+  color: var(--black-text-color);
+}
+
+.item__milk::before {
+  content: url(../images/icons/icon-group1.svg);
+  width: 33px;
+  height: 50px;
+}
+.item__fruit::before {
+  content: url(../images/icons/icon-group2.svg);
+  width: 50px;
+  height: 50px;
+}
+.item__icecream::before {
+  content: url(../images/icons/icon-group3.svg);
+  width: 44px;
+  height: 50px;
+}
