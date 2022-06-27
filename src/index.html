@@ -70,5 +70,19 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script src="./js/swiper.js"></script>
+
+    <!-- кнопка -->
+    <script>
+      //   Кнопка меню
+      const iconMenu = document.querySelector('.menu__icon');
+      const menu = document.querySelector('.menu');
+      if (iconMenu) {
+        iconMenu.addEventListener('click', function (e) {
+          document.body.classList.toggle('_lock');
+          iconMenu.classList.toggle('_active');
+          menu.classList.toggle('_active');
+        });
+      }
+    </script>
   </body>
 </html>
