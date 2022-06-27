@@ -56,7 +56,7 @@
     }
 
         @media screen and (min-width: 1200px) {
-            width: 100vw;
+            width: 95vw;
             display: flex;
             align-items: center;
             padding-top: 0;
@@ -80,8 +80,6 @@ body._lock {
 .menu__icon {
     background-color: transparent;
     position: relative;
-    // top: 0;
-    // right: 20px;
     width: 20px;
     height: 14px;
     cursor: pointer;
@@ -208,7 +206,7 @@ body._lock {
 
     .menu__icon {
         top: 0;
-        left: 38%;
+        left: 30%;
     }
 
     .menu__icon._active {
@@ -273,6 +271,7 @@ body._lock {
     @media screen and (min-width: 1200px) {
         font-size: 16px;
         line-height: 1.31;
+        padding-left: 0;
 
         &:hover {
             transform: scale(1.1);
@@ -456,11 +455,12 @@ body._lock {
 
 
 //  ********** Фоновое вкусно **********
-.hero__extra::after {
+.hero__basic::after {
+    display: none;
     content: "";
     position: absolute;
-    bottom: -66%;
-    right: -411%;
+    bottom: 0;
+    right: 20px;
     width: 190px;
     height: 150px;
     background-repeat: no-repeat;
@@ -475,11 +475,13 @@ body._lock {
         background-image: url(../images/tablet/tablet-girl@2x.png);
     }
 
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+
     @media screen and (min-width: 1200px) {
         width: 304px;
         height: 241px;
-        bottom: -58%;
-        right: -365%;
 
         background-image: url(../images/laptop/laptop-girl.png);
 
@@ -669,4 +671,160 @@ body._lock {
     align-items: center;
 }
 }
+
+
+
+// **************************************************************
+/* ******************** Модальное окно ******************** */
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.hero__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--pink-color-third);
+
+    transition: visibility 300ms cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 10;
+}
+
+.hero__modal {
+    z-index: 100;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: var(--btn-static-color);
+    padding: 40px;
+
+    transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 350ms cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    max-height: 100%;
+    overflow-y: auto;
+    width: 80vw;
+
+    @media screen and (min-width: 768px) {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 100%;
+        max-width: 450px;
+    }
+
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.hero__backdrop.is-hidden .hero__modal {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+}
+
+.hero__backdrop.is-hidden .hero__modal {
+    transform: translate(-50%, -50%) scale(0.5) rotate(360deg);
+}
+
+.hero__btn-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        border-color: var(--btn-active-color);
+        outline-color: var(--btn-active-color);
+    }
+}
+
+.hero__close-icon {
+    fill: var(--pink-text-color);
+    transition: fill 250ms ease;
+
+    .btn-close:hover &,
+    .btn-close:focus & {
+        fill: var(--btn-active-color);
+    }
+}
+
+.hero__modal-title {
+    margin-bottom: 20px;
+    font-family: 'Titan One';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.4;
+    max-width: 165px;
+    text-align: left;
+    color: var(--pink-text-color);
+
+    @media screen and (min-width: 1200px) {
+        line-height: 1.15;
+    }
+}
+
+.hero__modal-text {
+    font-family: 'DM Sans';
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 500;
+
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+
+.hero__modal--img {
+    min-width: 100px;
+    min-height: 100px;
+    display: none;
+    margin-right: 10px;
+
+    @media screen and (min-width: 480px) {
+        display: block;
+    }
+}
+
+.hero__modal--flex {
+display: flex;
+
+}
+
+.hero__modal--img-cow {
+    min-width: 200px;
+    display: none;
+
+    @media screen and (min-width: 480px) {
+            display: block;
+        }
+}
+
+
+
+//////////////////////////////////////////////////////////
+/// //////////////////////////////////////////////////
+/// /////////////////////////////////////////////
 

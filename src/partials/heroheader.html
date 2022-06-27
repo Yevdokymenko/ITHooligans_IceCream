@@ -7,7 +7,7 @@
       </svg>
     </a>
 
-    <button class="menu__icon" type="button">
+    <button class="menu__icon" type="button" aria-label="Кнопка открыть/закрыть меню">
       <span class="line line-1"></span>
       <span class="line line-2"></span>
       <span class="line line-3"></span>
@@ -67,7 +67,7 @@
         incididunt ut
         labore et</p>
 
-        <button class="hero__btn--more" type="button">
+        <button class="hero__btn--more" type="button" aria-label="Кнопка подробнее" data-modal-open>
         <svg class="btn-more__icon" width="10" height="10">
           <use href="./images/sprite.svg#icon-icon-arrow-pink"></use>
         </svg>
@@ -142,16 +142,91 @@
 </section>
 
 
-<script>
-  //   Кнопка меню
-  const iconMenu = document.querySelector('.menu__icon');
-  const menu = document.querySelector('.menu');
-  if (iconMenu) {
-    iconMenu.addEventListener('click', function (e) {
-      document.body.classList.toggle('_lock');
-      iconMenu.classList.toggle('_active');
-      menu.classList.toggle('_active');
-    });
-  }
-</script>
+<!-- Модалка  -->
+<section>
+  <div class="hero__backdrop is-hidden" data-modal>
+    <div class="hero__modal">
+
+      <button class="hero__btn-close" type="button" aria-label="Кнопка закрыть форму" data-modal-close>
+        <svg class="hero__close-icon" width="18" height="18">
+          <use href="./images/sprite.svg#icon-logo-colorn"></use>
+        </svg>
+      </button>
+
+      <div class="hero__modal--flex">
+        <div>
+      <h2 class="hero__modal-title">Lorem consectetur, ipsum dolor amet </h2>
+      <p class="hero__modal-text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, est?
+      </p>
+    </div>
+        <picture class="hero__modal--img-cow">
+                      <!-- для мобильного -->
+                      <source media="(max-width: 767px)"
+                        srcset="./images/mobile/mobile-cow-with-milk.webp 1x, images/mobile/mobile-cow-with-milk@2x.webp 2x" type="image/webp">
+                    
+                      <source media="(max-width: 767px)" 
+                      srcset="./images/mobile/mobile-cow-with-milk.png 1x, images/mobile/mobile-cow-with-milk@2x.png 2x"
+                        type="image/png">
+                    
+                      <!-- для планшета -->
+                      <source media="(max-width: 1199px)"
+                        srcset="./images/tablet/tablet-cow-with-milk.webp 1x, images/tablet/tablet-cow-with-milk@2x.webp 2x" type="image/webp">
+                    
+                      <source media="(max-width: 1199px)" 
+                      srcset="./images/tablet/tablet-cow-with-milk.png 1x, images/tablet/tablet-cow-with-milk@2x.png 2x"
+                        type="image/png">
+                    
+                      <!-- для ноута -->
+                      <source media="(min-width: 1200px)"
+                        srcset="./images/laptop/laptop-cow-with-milk.webp 1x, images/laptop/laptop-cow-with-milk@2x.webp 2x" type="image/webp">
+                    
+                      <source media="(min-width: 1200px)" 
+                      srcset="./images/laptop/laptop-cow-with-milk.png 1x, images/laptop/laptop-cow-with-milk@2x.png 2x"
+                        type="image/png">
+                    
+                      <img src="./images/mobile/mobile-cow-with-milk.png" alt="Графин с молоком на фоне коровы">   
+        </picture>  
+        </div>
+
+      <p class="hero__modal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis asperiores tenetur hic earum fugit nesciunt.
+      </p>
+      <div class="hero__modal--flex">
+        <div class="hero__modal--img">
+              <picture>
+                <!-- для мобильного -->
+                <source media="(max-width: 767px)"
+                  srcset="./images/mobile/mobile-gal-4.webp 1x, images/mobile/mobile-gal-4@2x.webp 2x"
+                  type="image/webp">
+              
+                <source media="(max-width: 767px)"
+                  srcset="./images/mobile/mobile-gal-4.jpg 1x, images/mobile/mobile-gal-4@2x.jpg 2x" type="image/jpg">
+              
+                <!-- для планшета -->
+                <source media="(max-width: 1199px)"
+                  srcset="./images/tablet/tablet-gal-4.webp 1x, images/tablet/tablet-gal-4@2x.webp 2x"
+                  type="image/webp">
+              
+                <source media="(max-width: 1199px)"
+                  srcset="./images/tablet/tablet-gal-4.jpg 1x, images/tablet/tablet-gal-4@2x.jpg 2x" type="image/jpg">
+              
+                <!-- для ноута -->
+                <source media="(min-width: 1200px)"
+                  srcset="./images/laptop/laptop-gal-4.webp 1x, images/laptop/laptop-gal-4@2x.webp 2x"
+                  type="image/webp">
+              
+                <source media="(min-width: 1200px)"
+                  srcset="./images/laptop/laptop-gal-4.jpg 1x, images/laptop/laptop-gal-4@2x.jpg 2x" type="image/jpg">
+              
+                <img src="./images/mobile/mobile-gal-4.jpg" alt="Несколько рожков мороженного">
+      
+              </picture>
+        </div>
+      <p class="hero__modal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas maxime voluptates, veniam soluta repudiandae eum provident et. Maxime, harum unde?</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
