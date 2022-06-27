@@ -6,22 +6,45 @@
 .contacts__card {
     margin-bottom: 32px;
 
+
+
     display: flex;
     justify-content: center;
     align-items: center;
 
     flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 60px;
+        flex-direction: row;
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+
 }
 
 
 .contacts__list {
     background-color: var(--white-text-color);
-    width: 280px;
+    flex-basis: 280px;
     margin-bottom: 20px;
     padding: 40px 32px;
 
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
+
+    @media screen and (min-width: 768px) {
+    flex-basis: calc(100%/3 - 40px);
+
+    margin-bottom: 0;
+
+    margin-right: 32px;
+
+    &:last-child {
+        margin-right: 0; 
+    }
+
+    }
 
 }
 
@@ -31,10 +54,13 @@
 
 .contacts__cell {
     margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
+
 }
-.contacts__cell:last-child {
-    margin-bottom: 0;
-}
+
 
 
 .contacts__cafe {
@@ -51,6 +77,15 @@ line-height: 1.86;
 letter-spacing: 0.04em;
 
 margin-bottom: 20px;
+
+@media screen and (min-width: 768px) {
+font-weight: 500;
+font-size: 16px;
+
+margin-bottom: 32px;
+}
+
+
 }
 
 .contacts__foodtruck {
@@ -68,6 +103,14 @@ margin-bottom: 20px;
     letter-spacing: 0.04em;
     
     margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        width: 70%;
+        font-weight: 500;
+        font-size: 16px;
+        
+        margin-bottom: 32px;
+    }
 }
 
 .contacts__city {
@@ -77,6 +120,16 @@ margin-bottom: 20px;
     color: var(--black-text-color);
 
     margin-bottom: 8px;
+
+    @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px; 
+    }
+
 }
 
 
@@ -85,10 +138,19 @@ margin-bottom: 20px;
 padding-bottom: 24px;
 border-bottom: 1px solid var(--grey-border-color);
 
+@media screen and (min-width: 768px) {
+    padding-bottom: 32px;
+}
+
 }
 
 .contacts__working-hours {
 margin-bottom: 8px;
+
+@media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+}
+
 }
 
 .contacts__working-hours:last-child {
@@ -100,6 +162,22 @@ margin-bottom: 8px;
     line-height: 1.86;
 
     color: var(--black-text-color);
+
+    @media screen and (min-width: 768px) {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.86;
+letter-spacing: 0.04em;
+    }
+
+    @media screen and (min-width: 1200px) {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.86;
+
+
+    }
+
 }
 
 .contacts__text {
@@ -111,6 +189,22 @@ color: var(--grey-text-color);
 
 padding-bottom: 24px;
 border-bottom: 1px solid var(--grey-border-color);
+
+@media screen and (min-width: 768px) {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.66;
+
+padding-bottom: 32px;
+}
+
+@media screen and (min-width: 1200px) {
+
+font-size: 16px;
+line-height: 1.83;
+}
+
+
 }
 
 .contacts__time {
@@ -118,6 +212,19 @@ font-size: 12px;
 line-height: 1.86;
 
 color: var(--secondary-pink-text-color);
+
+@media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+}
+
+@media screen and (min-width: 1200px) {
+    font-size: 16px;
+
+}
+
+
 }
 
 .contacts__tel-email {
@@ -125,7 +232,28 @@ color: var(--secondary-pink-text-color);
 font-size: 12px;
 line-height: 1.5;
 color: var(--grey-text-color);
+
+@media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.83;
 }
+
+@media screen and (min-width: 1200px) {
+    font-size: 16px;
+}
+
+}
+
+.contacts__button-group {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+}
+
+
 
 .contacts__button {
 width: 55%;
@@ -148,6 +276,28 @@ font-size: 16px;
 line-height: 1.31;
 
 margin-bottom: 10px;
+
+@media screen and (min-width: 768px) {
+    width: 30%;
+    margin-right: 15px;
+    margin-left: 0;
+
+    margin-bottom: 0;
+
+    &:last-child {
+        margin-right: 0; 
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    width: 15%;
+    margin-right: 12px;
+
+    &:last-child {
+        margin-right: 0; 
+    }
+}
+
 }
 
 .contacts__button:last-child {
@@ -168,4 +318,3 @@ margin-right: 8px;
     background-color: var(--white-text-color);
     color: var(--pink-text-color)
 }
-
