@@ -97,6 +97,14 @@
   border-radius: 4px;
 
   z-index: 101;
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 30%;
+  }
 }
 
 .close-btn-franchise {
@@ -298,6 +306,14 @@
   border-radius: 4px;
 
   z-index: 101;
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 30%;
+  }
 }
 
 .close-btn-our-locations {
@@ -341,4 +357,10 @@
   color: var(--grey-text-color);
 
   padding-bottom: 24px;
+}
+
+.modal__button--center {
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
