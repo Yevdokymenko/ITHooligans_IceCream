@@ -15,6 +15,11 @@
         z-index: 5;
         background-color: var(--pink-color-third);
     }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 .logo {
@@ -48,8 +53,19 @@
         width: 40vw;
         top: 0;
         right: 0;
-
     }
+
+        @media screen and (min-width: 1200px) {
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            padding-top: 0;
+            flex-direction: row-reverse;
+            height: 100px;
+            pointer-events: none;
+            background-color: transparent;
+            transform: translateX(0);
+        }
 }
 
 .menu._active {
@@ -150,8 +166,6 @@ body._lock {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
-    display: flex;
-    align-items: center;
     color: var(--pink-text-color);
     cursor: pointer;
 
@@ -161,11 +175,24 @@ body._lock {
         transform: scale(1.1);
         border: 2px solid var(--btn-active-color);
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-left: auto;
+        padding-left: 37px;
+        padding-right: 37px;
+        display: none;
+    }
 }
 
 .menu-btn__icon {
     fill: var(--pink-text-color);
     margin-left: 15px;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 10px;
+    }
 }
 
 .header__btn {
@@ -194,10 +221,6 @@ body._lock {
 }
 
 @media screen and (min-width: 1200px) {
-    .header__btn {
-        padding-left: 37px;
-        padding-right: 37px;
-    }
 
     .menu__icon {
         display: none;
@@ -237,8 +260,7 @@ body._lock {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.28;
-    letter-spacing: 0;
-
+    letter-spacing: normal;
     color: var(--white-text-color);
 
     transition: transform 200ms ease;
@@ -256,7 +278,6 @@ body._lock {
             transform: scale(1.1);
         }
     }
-
 }
 
 .nav__link--accent {
@@ -266,9 +287,9 @@ body._lock {
 
 /*********************** Герой  ********************/
 .hero {
-    /* position: relative; */
     background-color: var(--bg-color-pink);
     z-index: 1;
+    overflow: hidden;
 }
 
 .hero__container {
@@ -400,7 +421,7 @@ body._lock {
 .hero__extra::before {
     content: "";
     position: absolute;
-    bottom: -25%;
+    bottom: -45%;
     right: 100%;
     width: 152px;
     height: 154px;
@@ -418,6 +439,8 @@ body._lock {
     }
 
     @media screen and (min-width: 1200px) {
+        bottom: -25%;
+        right: 100%;
         width: 213px;
         height: 216px;
 
@@ -440,7 +463,6 @@ body._lock {
     right: -411%;
     width: 190px;
     height: 150px;
-
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -456,6 +478,8 @@ body._lock {
     @media screen and (min-width: 1200px) {
         width: 304px;
         height: 241px;
+        bottom: -58%;
+        right: -365%;
 
         background-image: url(../images/laptop/laptop-girl.png);
 
@@ -466,7 +490,6 @@ body._lock {
         }
     }
 }
-
 
 .hero__extra {
     position: relative;
@@ -505,12 +528,20 @@ body._lock {
     height: 18px;
     border-radius: 50%;
     background-color: var(--btn-static-color);
+    border: 1px solid transparent;
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
     background-size: cover;
     cursor: pointer;
+
+    transition: transform 250ms ease, border 250ms ease;
+        
+        &:hover {
+            transform: scale(1.2);
+            border: 1px solid var(--btn-active-color);
+        }
 
     @media screen and (min-width: 1200px) {
         width: 26px;
@@ -550,12 +581,12 @@ body._lock {
 @media screen and (min-width: 1200px) {
     .hero__img--ellipse {
         bottom: 77px;
-        right: 20%;
-        transform: translateX(20%);
+        right: 30%;
+        transform: translateX(30%);
     }
 
     .hero__img--ice {
-        right: 25%;
+        right: 35%;
         bottom: 0;
     }
 }
@@ -626,26 +657,16 @@ body._lock {
     }
 }
 
-.header__nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 70px;
+@media screen and (min-width: 1200px) {
+.nav {
+    margin-right: auto;
+    margin-left: auto;
+    pointer-events: all;
 }
 
-.nav__list--header {
+.nav__list {
     display: flex;
     align-items: center;
 }
-
-@media screen and (min-width: 1200px) {
-    .menu {
-        display: none;
-    }
 }
 
-@media screen and (max-width: 1199px) {
-    .header__nav {
-        display: none;
-    }
-}
