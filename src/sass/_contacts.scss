@@ -43,6 +43,8 @@
     @media screen and (min-width: 768px) {
     flex-basis: calc(100%/3 - 40px);
 
+    padding: 40px 30px;
+
     margin-bottom: 0;
 
     margin-right: 32px;
@@ -68,6 +70,11 @@
 
 }
 
+.contacts__cell--column {
+    display: flex;
+    flex-direction:column;
+
+}
 
 
 .contacts__cafe {
@@ -326,7 +333,7 @@ margin-right: 8px;
     background-color: var(--btn-active-color);
     color: var(--white-text-color);
 
-transition: transform 250ms ease, border 200ms ease, color 200ms ease, background-color 200ms ease;
+transition: transform 250ms ease, border 200ms ease, color 200ms ease, background-color 200ms ease, stroke 200ms ease;
 
 &:hover,
 &:focus {
@@ -336,6 +343,11 @@ transform: scale(1.1);
         border: 2px solid var(--btn-active-color);
     }
 }
+
+.contacts--arrow {
+    fill: rgba(212, 20, 67, 1);
+}
+
 
 .contacts__button-white {
     background-color: var(--white-text-color);
