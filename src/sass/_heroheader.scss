@@ -90,7 +90,8 @@ body._lock {
         rotate 300ms ease,
         scale 200ms ease;
 
-    &:hover {
+    &:hover,
+    &:focus {
         transform: scale(1.4);
     }
 }
@@ -169,7 +170,8 @@ body._lock {
 
     transition: transform 200ms ease;
 
-    &:hover {
+    &:hover,
+    &:focus {
         transform: scale(1.1);
         border: 2px solid var(--btn-active-color);
     }
@@ -206,7 +208,7 @@ body._lock {
 
     .menu__icon {
         top: 0;
-        left: 30%;
+        left: 40%;
     }
 
     .menu__icon._active {
@@ -263,7 +265,8 @@ body._lock {
 
     transition: transform 200ms ease;
 
-    &:hover {
+    &:hover,
+    &:focus {
         font-size: 16px;
         color: var(--pink-text-color);
     }
@@ -273,7 +276,8 @@ body._lock {
         line-height: 1.31;
         padding-left: 0;
 
-        &:hover {
+        &:hover,
+        &:focus {
             transform: scale(1.1);
         }
     }
@@ -383,7 +387,8 @@ body._lock {
 
     transition: transform 250ms ease, border 200ms ease, color 200ms ease, background-color 200ms ease;
 
-    &:hover {
+    &:hover,
+    &:focus {
         transform: scale(1.1);
         border: 2px solid var(--btn-active-color);
     }
@@ -399,7 +404,8 @@ body._lock {
     color: var(--white-text-color);
     background-color: var(--btn-active-color);
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: var(--pink-text-color);
         background-color: var(--btn-static-color);
         border: 2px solid var(--btn-active-color);
@@ -410,7 +416,8 @@ body._lock {
     color: var(--pink-text-color);
     background-color: var(--btn-static-color);
 
-    &:hover {
+    &:hover,
+    &:focus {
         border: 2px solid var(--btn-active-color);
     }
 }
@@ -540,7 +547,8 @@ body._lock {
 
     transition: transform 250ms ease, border 250ms ease;
         
-        &:hover {
+        &:hover,
+        &:focus {
             transform: scale(1.2);
             border: 1px solid var(--btn-active-color);
         }
@@ -732,11 +740,11 @@ body.modal-open {
 }
 
 .hero__backdrop.is-hidden .hero__modal {
-    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    transform: translate(-100%, -50%);
 }
 
-.hero__backdrop.is-hidden .hero__modal {
-    transform: translate(-50%, -50%) scale(0.5) rotate(360deg);
+.hero__backdrop.is-hidden .header__modal {
+    transform: translate(-50%, -100%);
 }
 
 .hero__btn-close {
@@ -823,8 +831,269 @@ display: flex;
 }
 
 
+//  ***************** Кнопка скролл вверх *****************
 
-//////////////////////////////////////////////////////////
-/// //////////////////////////////////////////////////
-/// /////////////////////////////////////////////
+.scroll_link {
+    position: fixed;
+    bottom: 4vh;
+    right: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    background-color: rgb(240, 240, 240);
+    border: 2px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 4;
+    transition: transform 250ms ease, border 200ms ease, background-color 200ms ease;
 
+    &:hover,
+    &:focus {
+        transform: scale(1.2);
+        background-color: var(--btn-hover-color);
+        border: 2px solid var(--btn-active-color);
+    }
+}
+
+.scroll-icon {
+    transform: rotate(270deg);
+}
+
+   @media screen and (min-width: 768px) {
+    .scroll_link {
+        display: none;
+    } 
+}
+
+
+// ****************** Форма купить **************
+
+.header__modal {
+    z-index: 100;
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        background-color: var(--pink-color-fourth);
+        padding: 40px;
+    
+        transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1),
+            visibility 350ms cubic-bezier(0.4, 0, 0.2, 1),
+            opacity 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        max-height: 100%;
+        overflow-y: auto;
+        width: 90vw;
+    
+        @media screen and (min-width: 700px) {
+            width: 100%;
+            max-width: 400px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 100%;
+            max-width: 450px;
+        }
+}
+
+.form {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.choice-left {
+    width: 35%;
+}
+.choice-right {
+    width: 65%;
+}
+
+.choice-info {
+    width: 100%;
+}
+
+.form__group {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;        
+}
+
+.textarea__group {
+    display: block;
+}
+
+.checkbox__group {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+}
+
+.form__icon {
+    display: block;
+    fill: var(--bg-color-pink);
+    cursor: pointer;
+    transition: fill var(--animation);
+
+}
+.select__group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.select__field {
+    display: inline-block;
+    border: 1px solid var(--grey-border-color);
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 12px;
+    color: var(--pink-color-fourth);
+    cursor: pointer;
+
+    transition: border-color var(--animation);
+        
+    .select__group:hover &,
+    .select__group:focus-within & {
+        border-color: var(--btn-active-color);
+        outline-color: var(--btn-active-color);
+    }
+
+}
+
+.form__field {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 4px;
+    color: var(--pink-color-fourth);
+
+    border: 1px solid var(--grey-border-color);
+
+    font-size: 12px;
+    cursor: pointer;
+    transition: border-color var(--animation);
+
+    .form__group:hover &,
+    .form__group:focus-within & {
+        border-color: var(--btn-active-color);
+        outline-color: var(--btn-active-color);
+    }
+}
+
+.form__textarea {
+    resize: none;
+    height: 60px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 1.14;
+
+    transition: border-color var(--animation);
+        
+    .textarea__group:hover &,
+    .textarea__group:focus-within & {
+        border-color: var(--btn-active-color);
+        outline-color: var(--btn-active-color);
+    }
+}
+
+.form__textarea::placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: var(--grey-border-color);
+}
+
+.form__title {
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--pink-text-color);
+    margin-bottom: 4px;
+}
+
+
+.checkbox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.checkbox__text {
+    text-align: center;
+    padding-left: 20px;
+    font-size: 12px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
+}
+
+.checkbox__policy {
+    text-decoration-line: underline;
+    color: var(--pink-text-color);
+}
+
+.checkbox__choice {
+    position: absolute;
+    left: 85px;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.checkbox__field {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    cursor: pointer;
+}
+
+.checkbox__choice:checked+.form__icon {
+    outline-color: transparent;
+    fill:var(--btn-active-color);
+}
+
+.checkbox__choice:hover+.form__icon,
+.checkbox__choice:focus+.form__icon {
+    outline-color: var(--btn-active-color);
+   
+}
+
+.form__icon:hover {
+    fill: var(--btn-active-color);
+    transform: scale(1.1);
+}
+
+.form__btn {
+    display: block;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+}

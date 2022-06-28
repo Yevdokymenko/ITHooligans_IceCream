@@ -185,6 +185,7 @@
 
 .modal-franchise__roll {
   background-color: var(--pink-color-fourth);
+   width: 100px;
 
   color: var(--white-text-color);
   padding: 8px;
@@ -194,19 +195,32 @@
   letter-spacing: 0.01em;
 
   border: 1px solid var(--btn-active-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    width: 150px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    width: 200px;
+  }
 }
 
 .modal-franchise__choice {
   color: var(--white-text-color);
+  
 
   font-size: 10px;
   line-height: 1.17;
   letter-spacing: 0.01em;
 
-  padding-right: 8px;
-
   background-color: var(--pink-color-fourth);
   border: 1px solid var(--btn-active-color);
+
+  @media screen and (min-width: 768px) {
+    ont-size: 12px;
+  }
 }
 
 .modal-franchise__policy-group {
