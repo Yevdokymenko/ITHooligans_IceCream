@@ -76,12 +76,22 @@
       //   Кнопка меню
       const iconMenu = document.querySelector('.menu__icon');
       const menu = document.querySelector('.menu');
+      const navLink = document.querySelectorAll('.nav__link');
       if (iconMenu) {
         iconMenu.addEventListener('click', function (e) {
           document.body.classList.toggle('_lock');
           iconMenu.classList.toggle('_active');
           menu.classList.toggle('_active');
         });
+        if (navLink) {
+          navLink.forEach(link =>
+            link.addEventListener('click', e => {
+              document.body.classList.remove('_lock');
+              iconMenu.classList.remove('_active');
+              menu.classList.remove('_active');
+            })
+          );
+        }
       }
     </script>
   </body>
