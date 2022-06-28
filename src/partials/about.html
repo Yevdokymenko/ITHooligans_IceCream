@@ -58,12 +58,21 @@
                     Cras massa nibh, tincidunt.</p>
 
                     <p class="section-about__text-tagline">Aliquam erat volutpat. Aenean accumsan.</p>
-                
-                    <button class="section-about__button" data-modal-open>Read more
+                <!-- Кнопка модального окна OPEN-->
+                    <button class="section-about__button" data-modal-our-locations-open>Read more
                     <svg class="section-about__icon" width="8" height="10">
-                        <use href="./images/sprite.svg#icon-icon-right-pink"></use>
+                        <use href="./images/sprite.svg#icon-icon-arrow-pink"></use>
                     </svg>
                 </button>
+                <!-- Модальное окно -->
+                <div class="section-about__backdrop sr-only" data-modal-our-locations>
+            <div class="section-about__modal-wrapper">
+            <button class="section-about__modal-btn" data-modal-our-locations-close>
+              <svg class="section-about__modal-icon" width="15" height="15">
+                <use href="./images/sprite.svg#icon-icon-arrow-pink"></use>
+              </svg>
+            </button>
+            </div>
             </div>
         </div>
     </div>

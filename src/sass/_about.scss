@@ -82,6 +82,26 @@
     line-height: 1.15;
     margin-bottom: 26px;
 
+    &:hover,
+    &:focus {
+        animation: glow 2s ease-in-out infinite alternate;
+        transform: rotate(-5deg);
+    }
+
+
+    @keyframes section-about__lable {
+        from {
+            text-shadow: 0 0 50px #fff, 0 0 10px #fff, 0 0 20px #e60073,
+                0 0 20px #e60073, 0 0 30px #e60073, 0 0 40px #e60073,
+        }
+
+        to {
+            text-shadow: 0 0 20px #fff, 0 0 30px #f880f2, 0 0 40px #f880f2,
+                0 0 50px #f880f2, 0 0 60px #f880f2, 0 0 70px #f880f2,
+                0 0 80px #f880f2;
+        }
+    }
+
 
 
     @media screen and (min-width: 768px) {
@@ -135,6 +155,14 @@
     margin-top: 46px;
     margin-bottom: 27px;
     font-weight: 700;
+    transition: transform 250ms ease, border 200ms ease, color 200ms ease;
+    outline: transparent;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+
+    }
 
 
     @media screen and (min-width: 768px) {
@@ -160,6 +188,14 @@
     line-height: 1.58;
     margin-bottom: 10px;
     font-weight: 700;
+    transition: transform 250ms ease, border 200ms ease, color 200ms ease;
+    outline: transparent;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+
+    }
 
 
     @media screen and (min-width: 768px) {
@@ -182,6 +218,14 @@
     line-height: 1.58;
     margin-bottom: 20px;
     font-weight: 700;
+    transition: transform 250ms ease, border 200ms ease, color 200ms ease;
+    outline: transparent;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+
+    }
 
 
     @media screen and (min-width: 768px) {
@@ -198,6 +242,7 @@
 
 }
 
+// Кнопка модального окна OPEN
 .section-about__button {
     color: var(--btn-active-color);
     background-color: #fff;
@@ -209,19 +254,18 @@
     height: 44px;
     font-size: 14px;
     line-height: 1.29;
-    border: 0;
+    border: 2px solid #0000;
     border-radius: 22px;
     font-weight: 700;
     font-style: normal;
     cursor: pointer;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms ease, border 200ms ease, color 200ms ease;
     outline: transparent;
 
     &:hover,
     &:focus {
-        background-color: #ECEBEB;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 22px;
+        transform: scale(1.1);
+        border: 2px solid var(--btn-active-color);
     }
 
 
@@ -243,4 +287,112 @@
     margin-left: 13.6px;
     border-radius: 2px;
     fill: currentColor;
+
+    @media screen and (min-width: 768px) {
+        width: 9px;
+        height: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 10px;
+        height: 15px
+    }
+}
+
+// Модальное окно
+.section-about__backdrop {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition-property: color;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: visibility 500ms cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sr-only {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+}
+
+.section-about__modal-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    transform: translate(-50%, -50%) scale(1);
+
+    width: 90%;
+    max-height: calc(100vh - 30px);
+    overflow-y: auto;
+
+    background: var(--bg-color-pink);
+    background-image: url(../images/mobile/mobile-product-1@2x.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 70% 50%;
+
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    .section-about__backdrop.sr-only & {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    @media screen and (min-width: 320px) {
+
+        max-width: 480px;
+        height: 600px;
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 520px;
+        max-height: 580px;
+    }
+}
+
+// Кнопка модального окна CLOSE
+.section-about__modal-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    transition-property: color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--bg-color-green)
+    }
+
+    &:hover .section-about__modal-icon,
+    &:focus .section-about__modal-icon {
+        fill: var(--btn-active-color);
+        transform: rotate(180deg);
+    }
+}
+
+.section-about__modal-icon {
+    transform: rotate(0deg);
+    transition-property: color;
+    color: var(--btn-active-color);
+    transition-property: fill, transform;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+    transition-delay: 0;
 }
