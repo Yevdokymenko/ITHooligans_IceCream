@@ -1,5 +1,5 @@
 .page-footer {
-    background-color: #FFF5F6;
+    background-color: var(--bg-color-secondary-pink);
     width: 100%;
     min-width: 320px;
 
@@ -42,7 +42,7 @@
         text-transform: uppercase;
         margin-bottom: 16px;
 
-        color: #FFA5BA;
+        color: var(--secondary-pink-text-color);
 
         @media screen and (min-width:768px) {
 
@@ -67,7 +67,7 @@
         letter-spacing: 0.04em;
         text-transform: uppercase;
 
-        color: #D41443;
+        color: var(--pink-text-color);
 
         @media screen and (min-width:768px) {
 
@@ -82,11 +82,7 @@
             letter-spacing: 0.06em;
         }
     }
-        &__title--big:hover,
-        &__title--big:focus {
-            transform: rotate(-5deg);
-            animation: 2s ease-in-out 0s infinite alternate none running glow;
-        }
+      
 }
 
         .page-footer__title--big:hover,
@@ -232,9 +228,10 @@
         align-items: center;
         width: 32px;
         height: 32px;
-        background-color: #FEA5BB;
+        background-color: rgba(254, 165, 187, 1);
         border-radius: 50%;
-        transition: background-color var(--animation);
+        transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+            transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
         @media screen and (min-width:768px) {
             width: 34px;
@@ -245,7 +242,8 @@
     &__link:hover,
     &__link:focus {
         background-color: var(--pink-text-color);
-        fill: #FFFFFF;
+        fill: var(--white-text-color);
+        transform: rotateY(360deg);
     }
 
     &__item:not(:last-child) {
@@ -253,14 +251,14 @@
     }
 
     &__icon {
-        fill: #FFFFFF;
+        fill: var(--white-text-color);
         transition: fill var(--animation);
     }
 }
 
 .socials__link:hover .socials__icon,
 .socials__link:focus .socials__icon {
-    fill:#FFFFFF;
+    fill:var(--white-text-color);
     transition: fill var(--animation);
 }
 
@@ -282,7 +280,7 @@
     }
 
     &__text {
-        color: #000000;
+        color: var(--black-text-color);
     }
 
     &__phone {
@@ -296,7 +294,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid #E1E1E1;
+    border-top:1px solid var(--grey-border-color);
     padding-top: 16px;
     padding-bottom: 3px;
 
@@ -313,7 +311,7 @@
         line-height: 1.52;
         max-width: 150px;
 
-        color: #907E82;
+        color: var(--grey-text-color);
         transition: color var(--animation);
 
         @media screen and (min-width:768px) {
