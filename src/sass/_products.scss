@@ -2,7 +2,7 @@
 
 // products style mob version
 
-@media screen and (min-width: 320px) {
+
   
   .section-products{
     margin-bottom: 0;
@@ -18,12 +18,6 @@
     color: var(--secondary-pink-text-color);
 
     margin-bottom: 15px;
-  }
-
-  .products__label:hover,
-  .products__label:focus{
-    transform:scale(2);
-    transition: transform var(--animation);
   }
 
   .container-products {
@@ -350,7 +344,7 @@
   .button-icon {
     fill: var(--pink-text-color);
   }
-}
+
 
 // products style tablet version
 
@@ -380,7 +374,7 @@
       margin-bottom: 20px;
   
       position: absolute;
-      top: 0%;
+      top: -4%;
       left: 50%;
       transform: translate(-50%, -50%);
       content: url(../images/tablet/tablet-product-2.png);
@@ -399,7 +393,7 @@
       margin-bottom: 20px;
     
       position: absolute;
-      top: 0%;
+      top: -4%;
       left: 50%;
       transform: translate(-50%, -50%);
       content: url(../images/tablet/tablet-product-3.png);
@@ -457,7 +451,7 @@
   }
 
   .products-item__description{
-    min-height: 213px;
+    min-height: 256px;
   }
 
 }
@@ -490,8 +484,8 @@
         margin-bottom: 20px;
     
         position: absolute;
-        top: -18%;
-        left: 40%;
+        top: -8%;
+        left: 50%;
         transform: translate(-50%, -50%);
         content: url(../images/laptop/laptop-product-2.png);
         @media (min-device-pixel-ratio: 2),
@@ -509,8 +503,8 @@
         margin-bottom: 20px;
     
         position: absolute;
-        top: -18%;
-        left: 40%;
+        top: -8%;
+        left: 50%;
         transform: translate(-50%, -50%);
         content: url(../images/laptop/laptop-product-3.png);
         @media (min-device-pixel-ratio: 2),
