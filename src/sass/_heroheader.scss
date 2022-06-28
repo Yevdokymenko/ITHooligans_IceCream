@@ -699,7 +699,7 @@ body.modal-open {
 
     transition: visibility 300ms cubic-bezier(0.4, 0, 0.2, 1),
         opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 10;
+    z-index: 99;
 }
 
 .hero__modal {
@@ -765,18 +765,22 @@ body.modal-open {
     &:hover,
     &:focus {
         border-color: var(--btn-active-color);
-        outline-color: var(--btn-active-color);
+        outline-color: var(--btn-active-color);       
+    }
+}
+
+.header__close-icon {
+    fill: var(--bg-color-third-pink);
+    transition: fill 250ms ease;
+
+    .hero__btn-close:hover &,
+    .hero__btn-close:focus & {
+        fill: var(--btn-active-color);
     }
 }
 
 .hero__close-icon {
-    fill: var(--pink-text-color);
-    transition: fill 250ms ease;
-
-    .btn-close:hover &,
-    .btn-close:focus & {
-        fill: var(--btn-active-color);
-    }
+    fill: var(--pink-color-fourth);
 }
 
 .hero__modal-title {
@@ -906,6 +910,16 @@ display: flex;
     flex-wrap: wrap;
 }
 
+.header__form-title {
+    display: block;
+    font-family: 'Titan One';
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--pink-text-color);
+    padding-bottom: 20px;
+    text-align: center;
+}
+
 .choice-left {
     width: 35%;
 }
@@ -965,7 +979,6 @@ display: flex;
         border-color: var(--btn-active-color);
         outline-color: var(--btn-active-color);
     }
-
 }
 
 .form__field {
@@ -1097,3 +1110,4 @@ display: flex;
     margin-left: auto;
     cursor: pointer;
 }
+
