@@ -185,7 +185,7 @@
 
 .modal-franchise__roll {
   background-color: var(--pink-color-fourth);
-   width: 100px;
+  width: 100px;
 
   color: var(--white-text-color);
   padding: 8px;
@@ -209,7 +209,6 @@
 
 .modal-franchise__choice {
   color: var(--white-text-color);
-  
 
   font-size: 10px;
   line-height: 1.17;
@@ -347,8 +346,17 @@
   align-items: center;
 
   padding: 0;
-}
 
+  &__icon {
+    transform: rotate(0deg);
+    transition-property: color;
+    color: var(--btn-active-color);
+    transition-property: fill, transform;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+    transition-delay: 0;
+  }
+}
 
 .modal-our-locations__header {
   letter-spacing: 0.04em;
@@ -371,7 +379,7 @@
 }
 
 .modal__button--center {
- display: flex;
- align-items: center;
- justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

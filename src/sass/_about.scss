@@ -1,398 +1,378 @@
 .section-about {
-    background-color: var(--bg-color-secondary-pink);
+  background-color: var(--bg-color-secondary-pink);
 }
 
 .about {
+  background-image: url(../images/mobile/mobile-sectionbg.png);
+  // background-image: url(..images/mobile/mobile-sectionbg@2x.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 70% 90%;
+  padding-top: 60px;
+  padding-bottom: 7px;
 
-    background-image: url(../images/mobile/mobile-sectionbg.png);
-    // background-image: url(..images/mobile/mobile-sectionbg@2x.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
+  @media screen and (min-width: 768px) {
+    background-image: none;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/laptop/laptop-sectionbg.png);
+    // background-image: url(../images/laptop/laptop-sectionbg@2x.png);
     background-position: 70% 90%;
     padding-top: 60px;
-    padding-bottom: 7px;
-
-
-    @media screen and (min-width: 768px) {
-        background-image: none;
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        background-image: url(../images/laptop/laptop-sectionbg.png);
-        // background-image: url(../images/laptop/laptop-sectionbg@2x.png);
-        background-position: 70% 90%;
-        padding-top: 60px;
-        padding-bottom: 39px;
-    }
-
+    padding-bottom: 39px;
+  }
 }
 
 .section-about__image {
-    @media screen and (min-width: 768px) {
-        height: 340px;
-        width: 340px;
-    }
+  @media screen and (min-width: 768px) {
+    height: 340px;
+    width: 340px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        height: 516px;
-        width: 516px;
-    }
+  @media screen and (min-width: 1200px) {
+    height: 516px;
+    width: 516px;
+  }
 }
 
 .section-about__lable {
-    font-family: Titan One, sans-serif;
-    color: var(--secondary-pink-text-color);
+  font-family: Titan One, sans-serif;
+  color: var(--secondary-pink-text-color);
+  margin-bottom: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
     margin-bottom: 15px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.17;
-    text-align: center;
-    text-transform: uppercase;
-
-
-    @media screen and (min-width: 768px) {
-        font-size: 26px;
-        line-height: 1.15;
-        margin-bottom: 16px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        font-size: 30px;
-        line-height: 1.13;
-        margin-bottom: 15px;
-    }
+  }
 }
 
 .section-abaut__title {
-    max-width: 200px;
-    margin-right: auto;
-    margin-left: auto;
-    font-family: Titan One, sans-serif;
-    color: var(--pink-text-color);
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    font-style: normal;
-    font-weight: 400;
-    padding-left: 9px;
-    font-size: 34px;
+  max-width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Titan One, sans-serif;
+  color: var(--pink-text-color);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 9px;
+  font-size: 34px;
+  line-height: 1.15;
+  margin-bottom: 26px;
+
+  &:hover,
+  &:focus {
+    animation: glow 2s ease-in-out infinite alternate;
+    transform: rotate(-5deg);
+  }
+
+  @keyframes section-about__lable {
+    from {
+      text-shadow: 0 0 50px #fff, 0 0 10px #fff, 0 0 20px #e60073,
+        0 0 20px #e60073, 0 0 30px #e60073, 0 0 40px #e60073;
+    }
+
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #f880f2, 0 0 40px #f880f2,
+        0 0 50px #f880f2, 0 0 60px #f880f2, 0 0 70px #f880f2, 0 0 80px #f880f2;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 100%;
+    font-size: 48px;
     line-height: 1.15;
-    margin-bottom: 26px;
+    margin-bottom: 50px;
+  }
 
-    &:hover,
-    &:focus {
-        animation: glow 2s ease-in-out infinite alternate;
-        transform: rotate(-5deg);
-    }
-
-
-    @keyframes section-about__lable {
-        from {
-            text-shadow: 0 0 50px #fff, 0 0 10px #fff, 0 0 20px #e60073,
-                0 0 20px #e60073, 0 0 30px #e60073, 0 0 40px #e60073,
-        }
-
-        to {
-            text-shadow: 0 0 20px #fff, 0 0 30px #f880f2, 0 0 40px #f880f2,
-                0 0 50px #f880f2, 0 0 60px #f880f2, 0 0 70px #f880f2,
-                0 0 80px #f880f2;
-        }
-    }
-
-
-
-    @media screen and (min-width: 768px) {
-        max-width: 100%;
-        font-size: 48px;
-        line-height: 1.15;
-        margin-bottom: 50px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        max-width: 534px;
-        font-size: 58px;
-        line-height: 1.14;
-        margin-bottom: 55px;
-    }
+  @media screen and (min-width: 1200px) {
+    max-width: 534px;
+    font-size: 58px;
+    line-height: 1.14;
+    margin-bottom: 55px;
+  }
 }
 
 .section-about__main {
-    @media screen and (min-width: 768px) {
-        display: flex;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 
-    @media screen and (min-width: 1200px) {
-        display: flex;
-    }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .section-about__body {
-    padding-right: 30px;
+  padding-right: 30px;
 
-    @media screen and (min-width: 768px) {
-        display: block;
-        padding: 0;
-        margin-left: 17px;
-        width: 340px;
-    }
+  @media screen and (min-width: 768px) {
+    display: block;
+    padding: 0;
+    margin-left: 17px;
+    width: 340px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        display: block;
-        padding: 51px 0 0;
-        margin-left: 74px;
-        width: 463px;
-    }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding: 51px 0 0;
+    margin-left: 74px;
+    width: 463px;
+  }
 }
 
 .section-about__text-desc {
-    color: var(--black-text-color);
-    font-style: normal;
-    font-size: 12px;
-    line-height: 1.58;
-    margin-top: 46px;
-    margin-bottom: 27px;
-    font-weight: 700;
-    transition: transform 250ms ease, border 200ms ease, color 200ms ease;
-    outline: transparent;
+  color: var(--black-text-color);
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.58;
+  margin-top: 46px;
+  margin-bottom: 27px;
+  font-weight: 700;
+  transition: transform 250ms ease, border 200ms ease, color 200ms ease;
+  outline: transparent;
 
-    &:hover,
-    &:focus {
-        transform: scale(1.1);
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
 
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.79;
+    margin-top: 50px;
+    margin-bottom: 19px;
+  }
 
-
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-        line-height: 1.79;
-        margin-top: 50px;
-        margin-bottom: 19px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        font-size: 16px;
-        line-height: 1.75;
-        margin-top: 4px;
-        margin-bottom: 35px;
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-top: 4px;
+    margin-bottom: 35px;
+  }
 }
 
-
 .section-about__text-lead {
-    color: var(--grey-text-color);
-    font-style: normal;
-    font-size: 12px;
-    line-height: 1.58;
-    margin-bottom: 10px;
-    font-weight: 700;
-    transition: transform 250ms ease, border 200ms ease, color 200ms ease;
-    outline: transparent;
+  color: var(--grey-text-color);
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.58;
+  margin-bottom: 10px;
+  font-weight: 700;
+  transition: transform 250ms ease, border 200ms ease, color 200ms ease;
+  outline: transparent;
 
-    &:hover,
-    &:focus {
-        transform: scale(1.1);
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
 
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.79;
+    margin-bottom: 9px;
+  }
 
-
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-        line-height: 1.79;
-        margin-bottom: 9px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        font-size: 14px;
-        line-height: 1.93;
-        margin-bottom: 35px;
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.93;
+    margin-bottom: 35px;
+  }
 }
 
 .section-about__text-tagline {
-    color: var(--grey-text-color);
-    font-style: normal;
-    font-size: 12px;
-    line-height: 1.58;
-    margin-bottom: 20px;
-    font-weight: 700;
-    transition: transform 250ms ease, border 200ms ease, color 200ms ease;
-    outline: transparent;
+  color: var(--grey-text-color);
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.58;
+  margin-bottom: 20px;
+  font-weight: 700;
+  transition: transform 250ms ease, border 200ms ease, color 200ms ease;
+  outline: transparent;
 
-    &:hover,
-    &:focus {
-        transform: scale(1.1);
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
 
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.79;
+    margin-bottom: 40px;
+  }
 
-
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-        line-height: 1.79;
-        margin-bottom: 40px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        font-size: 14px;
-        line-height: 1.93;
-        margin-bottom: 40px;
-    }
-
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.93;
+    margin-bottom: 40px;
+  }
 }
 
 // Кнопка модального окна OPEN
 .section-about__button {
-    color: var(--btn-active-color);
-    background-color: #fff;
-    display: block;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 176px;
-    height: 44px;
+  color: var(--btn-active-color);
+  background-color: #fff;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 176px;
+  height: 44px;
+  font-size: 14px;
+  line-height: 1.29;
+  border: 2px solid #0000;
+  border-radius: 22px;
+  font-weight: 700;
+  font-style: normal;
+  cursor: pointer;
+  transition: transform 250ms ease, border 200ms ease, color 200ms ease;
+  outline: transparent;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    border: 2px solid var(--btn-active-color);
+  }
+
+  @media screen and (min-width: 480px) {
     font-size: 14px;
     line-height: 1.29;
-    border: 2px solid #0000;
-    border-radius: 22px;
-    font-weight: 700;
-    font-style: normal;
-    cursor: pointer;
-    transition: transform 250ms ease, border 200ms ease, color 200ms ease;
-    outline: transparent;
+  }
 
-    &:hover,
-    &:focus {
-        transform: scale(1.1);
-        border: 2px solid var(--btn-active-color);
-    }
-
-
-    @media screen and (min-width: 480px) {
-        font-size: 14px;
-        line-height: 1.29;
-    }
-
-    @media screen and (min-width: 768px) {
-        font-size: 16px;
-        line-height: 1.31;
-    }
-
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.31;
+  }
 }
 
 .section-about__icon {
-    border: none;
-    vertical-align: middle;
-    margin-left: 13.6px;
-    border-radius: 2px;
-    fill: currentColor;
+  border: none;
+  vertical-align: middle;
+  margin-left: 13.6px;
+  border-radius: 2px;
+  fill: currentColor;
 
-    @media screen and (min-width: 768px) {
-        width: 9px;
-        height: 12px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 9px;
+    height: 12px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        width: 10px;
-        height: 15px
-    }
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 15px;
+  }
 }
 
 // Модальное окно
 .section-about__backdrop {
-    z-index: 100;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition-property: color;
-    background-color: rgba(0, 0, 0, 0.2);
-    transition: visibility 500ms cubic-bezier(0.4, 0, 0.2, 1),
-        opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition-property: color;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: visibility 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .section-about__modal-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    padding: 40px;
-    transform: translate(-50%, -50%) scale(1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  transform: translate(-50%, -50%) scale(1);
 
-    width: 90%;
-    max-height: calc(100vh - 30px);
-    overflow-y: auto;
+  width: 60%;
+  max-height: calc(100vh - 50px);
+  overflow-y: auto;
 
-    background: var(--bg-color-pink);
-    background-image: url(../images/mobile/mobile-product-1@2x.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 70% 50%;
+  background: var(--bg-color-pink);
+  background-image: url(../images/mobile/mobile-product-1@2x.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 70% 50%;
 
-    border-radius: 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 
-    .section-about__backdrop.is-hidden & {
-        transform: translate(-50%, -50%) scale(1.2);
-    }
+  .section-about__backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
 
-    @media screen and (min-width: 320px) {
+  @media screen and (min-width: 320px) {
+    max-width: 400px;
+    height: 500px;
+  }
 
-        max-width: 480px;
-        height: 600px;
-    }
-
-    @media screen and (min-width: 768px) {
-        max-width: 520px;
-        max-height: 580px;
-    }
+  @media screen and (min-width: 768px) {
+    max-width: 480px;
+    max-height: 500px;
+  }
 }
 
 // Кнопка модального окна CLOSE
 .section-about__modal-btn {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    background-color: #FFFFFF;
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    cursor: pointer;
-    transition-property: color;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: #ffffff;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  transition-property: color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-        border-color: var(--btn-active-color);
-    }
+  &:hover,
+  &:focus {
+    border-color: var(--btn-active-color);
+  }
 
-    &:hover .section-about__modal-icon,
-    &:focus .section-about__modal-icon {
-        fill: var(--btn-active-color);
-        transform: rotate(180deg);
-    }
+  &:hover .section-about__modal-icon,
+  &:focus .section-about__modal-icon {
+    fill: var(--btn-active-color);
+    transform: rotate(180deg);
+  }
 }
 
 .section-about__modal-icon {
-    transform: rotate(0deg);
-    transition-property: color;
-    color: var(--btn-active-color);
-    transition-property: fill, transform;
-    transition-duration: 250ms;
-    transition-timing-function: linear;
-    transition-delay: 0;
+  transform: rotate(0deg);
+  transition-property: color;
+  color: var(--btn-active-color);
+  transition-property: fill, transform;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
