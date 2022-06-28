@@ -15,7 +15,7 @@
 
     @media screen and (min-width: 768px) {
         background-image: none;
-        padding-top: 130px;
+        padding-top: 60px;
         padding-bottom: 60px;
     }
 
@@ -23,7 +23,7 @@
         background-image: url(../images/laptop/laptop-sectionbg.png);
         // background-image: url(../images/laptop/laptop-sectionbg@2x.png);
         background-position: 70% 90%;
-        padding-top: 125px;
+        padding-top: 60px;
         padding-bottom: 39px;
     }
 
@@ -301,7 +301,7 @@
 
 // Модальное окно
 .section-about__backdrop {
-    z-index: 1;
+    z-index: 100;
     position: fixed;
     top: 0;
     left: 0;
@@ -369,7 +369,7 @@
     height: 30px;
     padding: 0;
     background-color: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
     transition-property: color;
@@ -377,7 +377,7 @@
 
     &:hover,
     &:focus {
-        background-color: var(--bg-color-green);
+        border-color: var(--btn-active-color);
     }
 
     &:hover .section-about__modal-icon,
