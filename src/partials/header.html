@@ -1,5 +1,5 @@
-
-<header class="header">
+<!-- *******************  Шапка  ******************  -->
+<header class="header" id="top">
   <div class="container header__container">
     <a href="#" class="logo">
       <svg width="199" height="50">
@@ -13,19 +13,19 @@
       <span class="line line-3"></span>
     </button>
 
-    <button class="menu-btn header__btn" type="button">Buy now <svg class="menu-btn__icon" width="10" height="15">
+    <button class="menu-btn header__btn" type="button" data-form-open-1>Buy now <svg class="menu-btn__icon" width="10" height="15">
         <use href="./images/sprite.svg#icon-icon-arrow-pink"></use>
-    </svg></button>
+      </svg></button>
 
     <div class="menu header__nav">
 
-      <button class="menu-btn" type="button">Buy now <svg class="menu-btn__icon" width="10" height="15">
+      <button class="menu-btn" type="button" data-form-open-2>Buy now <svg class="menu-btn__icon" width="10" height="15">
           <use href="./images/sprite.svg#icon-icon-arrow-pink"></use>
         </svg></button>
 
       <nav class="nav">
         <ul class="nav__list list">
-          <li class="nav__item"><a href="#hero" class="nav__link link nav__link--accent">Home</a></li>
+          <li class="nav__item"><a href="#home" class="nav__link link nav__link--accent">Home</a></li>
           <li class="nav__item"><a href="#reviews" class="nav__link link">About us</a></li>
           <li class="nav__item"><a href="#about" class="nav__link link">How it’s made?</a></li>
           <li class="nav__item"><a href="#products" class="nav__link link">Our products</a></li>
@@ -37,196 +37,108 @@
   </div>
 </header>
 
-<section class="hero" id="hero">
-  <div class="container hero__container">
 
-    <div class="hero__basic">
-      <div>
-        <h1 class="hero__title animate__animated animate__backInLeft">ice cream <br> made with <br> <span class="accent--title">passion</span></h1>
+<!-- ******************** Форма купить ******************** -->
 
-        <ul class="hero__list list">
-          <li class="hero__item"><a href="#products" class="hero__btn link hero__btn--first">Products</a></li>
-          <li class="hero__item"><a href="#about" class="hero__btn link hero__btn--last">How it’s made?</a>
-          </li>
-        </ul>
-      </div>
+<div class="hero__backdrop is-hidden" data-form>
+  <div class="header__modal">
+    <button class="hero__btn-close" type="button" aria-label="Кнопка закрыть форму" data-form-close>
+      <svg class="close-icon" width="18" height="18">
+        <use href="./images/sprite.svg#icon-logo-colorn"></use>
+      </svg>
+    </button>
 
-      <ul class="hero__amount-list">
-        <li class="hero__amount-item">
-          <p class="hero__amount">16</p>
-          <p class="hero__amount--label">cafes</p>
-        </li>
-        <li class="hero__amount-item">
-          <p class="hero__amount">23</p>
-          <p class="hero__amount--label">food trucks</p>
-        </li>
-      </ul>
-    </div>
-    <div class="hero__extra">
-      <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut
-        labore et</p>
+    <b class="hero__modal-title">Choose your pleasure!</b>
 
-        <button class="hero__btn--more" type="button" aria-label="Кнопка подробнее" data-modal-open>
-        <svg class="btn-more__icon" width="10" height="10">
-          <use href="./images/sprite.svg#icon-icon-arrow-pink"></use>
-        </svg>
-        </button>
-    </div>
+    <form class="form" method="post">
 
-    <!-- Фоновый круг -->
-    <picture class="hero__img--ellipse animate__animated animate__zoomIn">
-      <!-- для мобильного -->
-      <source media="(max-width: 479px)"
-                srcset="./images/mobile/mobile-main-ellipse.webp 1x, images/mobile/mobile-main-ellipse@2x.webp 2x"
-                type="image/webp">
+<div class="choice-left">
 
-      <source media="(max-width: 479px)"
-        srcset="./images/mobile/mobile-main-ellipse.png 1x, images/mobile/mobile-main-ellipse@2x.png 2x"
-        type="image/png">
+  <label class="checkbox__group">
+    <input class="checkbox__choice" type="checkbox" name="milkshake" value="milkshake"/>
+            <svg class="form__icon" width="40" height="50">
+              <use href="./images/sprite.svg#icon-milkshake"></use>
+            </svg>
+  </label>
+  <label class="checkbox__group">
+    <input class="checkbox__choice" type="checkbox" name="icecream" value="icecream" checked />
+    <svg class="form__icon" width="40" height="50">
+      <use href="./images/sprite.svg#icon-icecream"></use>
+    </svg>
+  </label>
+  <label class="checkbox__group">
+    <input class="checkbox__choice" type="checkbox" name="coffee" value="coffee" />
+    <svg class="form__icon" width="40" height="50">
+      <use href="./images/sprite.svg#icon-cup"></use>
+    </svg>
+  </label>
+</div>
 
-      <!-- для планшета -->
-      <source media="(max-width: 1199px)"
-                srcset="./images/tablet/tablet-ellipse-pink.webp 1x, images/tablet/tablet-ellipse-pink@2x.webp 2x"
-                type="image/webp">
+      <div class="choice-right">
 
-      <source media="(max-width: 1199px)"
-        srcset="./images/tablet/tablet-ellipse-pink.png 1x, images/tablet/tablet-ellipse-pink@2x.png 2x"
-        type="image/png">
+<label class="select__group" for="flavours"><span class="form__title">Flavours</span>
+<select class="select__field" id="flavours" name="flavours">
+  <option value="vanilla" selected>Vanilla</option>
+  <option value="shocolate">Chocolate</option>
+  <option value="strawberry">Strawberry</option>
+  <option value="chocolate_chip">Chocolate Chip</option>
+    <option value="eggnog">Eggnog</option>
+    <option value="eskimo">Eskimo</option>
+    <option value="lemon_custard">Lemon Custard</option>
+</select>
+</label>
 
-      <!-- для ноута -->
-      <source media="(min-width: 1200px)"
-                srcset="./images/laptop/laptop-ellipse-pink.webp 1x, images/laptop/laptop-ellipse-pink@2x.webp 2x"
-                type="image/webp">
+<label class="select__group" for="toppings"><span class="form__title">Toppings</span>
+<select class="select__field" id="toppings" name="toppings">
+  <option value="none">None</option>
+  <option value="candy">Candy</option>
+  <option value="caramel_sauce" selected>Caramel sauce</option>
+  <option value="condensed_milk">Condensed milk</option>
+  <option value="whipped_cream">Whipped cream</option>
+  <option value="sprinkles">Sprinkles</option>
+  <option value="chocolate_sauce">Chocolate sauce</option>
+  <option value="chopped_nuts">Chopped nuts</option>
+</select>
+</label>
 
-      <source media="(min-width: 1200px)"
-        srcset="./images/laptop/laptop-ellipse-pink.png 1x, images/laptop/laptop-ellipse-pink@2x.png 2x"
-        type="image/png">
+<label class="select__group" for="size"><span class="form__title">Size</span>
+<select class="select__field" id="size" name="size">
+  <option value="xs">Extra Small</option>
+  <option value="s">Small</option>
+  <option value="m" selected>Medium</option>
+  <option value="l">Large</option>
+</select>
+</label>
+</div>
 
-      <img src="./images/mobile/mobile-main-ellipse.png" alt="Фоновый круг">
-    </picture>
+<div class="choice-info">
+      <label class="form__group">
+        <span class="form__title">Name</span>
+        <input class="form__field" type="text" name="name" placeholder=" " required>
+      </label>
 
-    <!-- Фоновое мороженное -->
-    <picture class="hero__img--ice animate__animated animate__fadeInUp">
-      <!-- для мобильного -->
-      <source media="(max-width: 767px)"
-                srcset="./images/mobile/mobile-header-slider.webp 1x, images/mobile/mobile-header-slider@2x.webp 2x"
-                type="image/webp">
+      <label class="form__group">
+        <span class="form__title">Telephone</span>
+        <input class="form__field" type="tel" name="tel" placeholder=" " required>
+      </label>
 
-      <source media="(max-width: 767px)"
-        srcset="./images/mobile/mobile-header-slider.png 1x, images/mobile/mobile-header-slider@2x.png 2x"
-        type="image/png">
+      <label class="textarea__group">
+        <span class="form__title">Comment</span>
+        <textarea class="form__textarea form__field" name="comment" placeholder="Enter text"></textarea>
+      </label>
+</div>
 
-      <!-- для планшета -->
-      <source media="(max-width: 1199px)"
-                srcset="./images/tablet/tablet-header-slider.webp 1x, images/tablet/tablet-header-slider@2x.webp 2x"
-                type="image/webp">
+      <label class="checkbox">
+        <input class="checkbox__field" type="checkbox" name="policy" required>
+        <span class="checkbox__text">I agree to the processing of my data. <a class="checkbox__policy" href=""  target="_blank" rel="noopener noreferrer">Read more...</a></span>
+      </label>
 
-      <source media="(max-width: 1199px)"
-        srcset="./images/tablet/tablet-header-slider.png 1x, images/tablet/tablet-header-slider@2x.png 2x"
-        type="image/png">
-
-      <!-- для ноута -->
-      <source media="(min-width: 1200px)"
-                srcset="./images/laptop/laptop-header-slider.webp 1x, images/laptop/laptop-header-slider@2x.webp 2x"
-                type="image/webp">
-
-      <source media="(min-width: 1200px)"
-        srcset="./images/laptop/laptop-header-slider.png 1x, images/laptop/laptop-header-slider@2x.png 2x"
-        type="image/png">
-
-      <img src="./images/mobile/mobile-header-slider.png" alt=" Рожок с мороженным">
-    </picture>
-
+      <button class="hero__btn hero__btn--first form__btn" type="submit">Send</button>
+    </form>
   </div>
-</section>
+</div>
 
 
-<!-- Модалка  -->
-<section>
-  <div class="hero__backdrop is-hidden" data-modal>
-    <div class="hero__modal">
 
-      <button class="hero__btn-close" type="button" aria-label="Кнопка закрыть форму" data-modal-close>
-        <svg class="hero__close-icon" width="18" height="18">
-          <use href="./images/sprite.svg#icon-logo-colorn"></use>
-        </svg>
-      </button>
-
-      <div class="hero__modal--flex">
-        <div>
-      <h2 class="hero__modal-title">Lorem consectetur, ipsum dolor amet </h2>
-      <p class="hero__modal-text">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, est?
-      </p>
-    </div>
-        <picture class="hero__modal--img-cow">
-                      <!-- для мобильного -->
-                      <source media="(max-width: 767px)"
-                        srcset="./images/mobile/mobile-cow-with-milk.webp 1x, images/mobile/mobile-cow-with-milk@2x.webp 2x" type="image/webp">
-                    
-                      <source media="(max-width: 767px)" 
-                      srcset="./images/mobile/mobile-cow-with-milk.png 1x, images/mobile/mobile-cow-with-milk@2x.png 2x"
-                        type="image/png">
-                    
-                      <!-- для планшета -->
-                      <source media="(max-width: 1199px)"
-                        srcset="./images/tablet/tablet-cow-with-milk.webp 1x, images/tablet/tablet-cow-with-milk@2x.webp 2x" type="image/webp">
-                    
-                      <source media="(max-width: 1199px)" 
-                      srcset="./images/tablet/tablet-cow-with-milk.png 1x, images/tablet/tablet-cow-with-milk@2x.png 2x"
-                        type="image/png">
-                    
-                      <!-- для ноута -->
-                      <source media="(min-width: 1200px)"
-                        srcset="./images/laptop/laptop-cow-with-milk.webp 1x, images/laptop/laptop-cow-with-milk@2x.webp 2x" type="image/webp">
-                    
-                      <source media="(min-width: 1200px)" 
-                      srcset="./images/laptop/laptop-cow-with-milk.png 1x, images/laptop/laptop-cow-with-milk@2x.png 2x"
-                        type="image/png">
-                    
-                      <img src="./images/mobile/mobile-cow-with-milk.png" alt="Графин с молоком на фоне коровы">   
-        </picture>  
-        </div>
-
-      <p class="hero__modal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis asperiores tenetur hic earum fugit nesciunt.
-      </p>
-      <div class="hero__modal--flex">
-        <div class="hero__modal--img">
-              <picture>
-                <!-- для мобильного -->
-                <source media="(max-width: 767px)"
-                  srcset="./images/mobile/mobile-gal-4.webp 1x, images/mobile/mobile-gal-4@2x.webp 2x"
-                  type="image/webp">
-              
-                <source media="(max-width: 767px)"
-                  srcset="./images/mobile/mobile-gal-4.jpg 1x, images/mobile/mobile-gal-4@2x.jpg 2x" type="image/jpg">
-              
-                <!-- для планшета -->
-                <source media="(max-width: 1199px)"
-                  srcset="./images/tablet/tablet-gal-4.webp 1x, images/tablet/tablet-gal-4@2x.webp 2x"
-                  type="image/webp">
-              
-                <source media="(max-width: 1199px)"
-                  srcset="./images/tablet/tablet-gal-4.jpg 1x, images/tablet/tablet-gal-4@2x.jpg 2x" type="image/jpg">
-              
-                <!-- для ноута -->
-                <source media="(min-width: 1200px)"
-                  srcset="./images/laptop/laptop-gal-4.webp 1x, images/laptop/laptop-gal-4@2x.webp 2x"
-                  type="image/webp">
-              
-                <source media="(min-width: 1200px)"
-                  srcset="./images/laptop/laptop-gal-4.jpg 1x, images/laptop/laptop-gal-4@2x.jpg 2x" type="image/jpg">
-              
-                <img src="./images/mobile/mobile-gal-4.jpg" alt="Несколько рожков мороженного">
-      
-              </picture>
-        </div>
-      <p class="hero__modal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas maxime voluptates, veniam soluta repudiandae eum provident et. Maxime, harum unde?</p>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 
