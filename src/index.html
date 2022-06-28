@@ -73,6 +73,25 @@
 
     <script src="./js/modal-1.js"></script>
 
+    <script>
+      // Скрипт для формы заказа
+      (() => {
+        const refs = {
+          openModalBtn1: document.querySelector('[data-form-open-1]'),
+          openModalBtn2: document.querySelector('[data-form-open-2]'),
+          closeModalBtn: document.querySelector('[data-form-close]'),
+          modal: document.querySelector('[data-form]'),
+        };
+        refs.openModalBtn1.addEventListener('click', toggleModal);
+        refs.openModalBtn2.addEventListener('click', toggleModal);
+        refs.closeModalBtn.addEventListener('click', toggleModal);
+        function toggleModal() {
+          document.body.classList.toggle('modal-open');
+          refs.modal.classList.toggle('is-hidden');
+        }
+      })();
+    </script>
+
     <!-- кнопка -->
     <script>
       //   Кнопка меню
