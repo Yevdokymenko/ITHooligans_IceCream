@@ -1,10 +1,7 @@
-.container-advantages {
-  padding-right: 20px;
-  padding-left: 20px;
-}
 .section-advantages {
   background-color: var(--bg-color-secondary-pink);
   padding-bottom: 28px;
+  padding-top: 40px;
 }
 
 .section-advantages__point {
@@ -18,6 +15,11 @@
 
   padding-top: 16px;
   color: var(--pink-text-color);
+  &:hover,
+  &:focus {
+    transform: rotate(-5deg);
+    animation: glow 2s ease-in-out infinite alternate;
+  }
 }
 
 .section-advantages__text {
@@ -35,22 +37,67 @@
 }
 
 .item__milk::before {
-  content: url(../images/icons/icon-group1.svg);
+  content: url(../images/mobile/mobile-cow.png);
+  display: inline-block;
   width: 33px;
   height: 50px;
-}
-.item__fruit::before {
-  content: url(../images/icons/icon-group2.svg);
-  width: 50px;
-  height: 50px;
-}
-.item__icecream::before {
-  content: url(../images/icons/icon-group3.svg);
-  width: 44px;
-  height: 50px;
+  animation: reduсe 5s ease-in-out infinite;
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .item__milk::before {
+    content: url(../images/mobile/mobile-cow@2x.png);
+  }
+}
+
+.item__fruit::before {
+  content: url(../images/mobile/mobile-cup.png);
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  animation: reduсe 5s ease-in-out infinite;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .item__fruit::before {
+    content: url(../images/mobile/mobile-cup@2x.png);
+  }
+}
+.item__icecream::before {
+  content: url(../images/mobile/mobile-heart.png);
+  display: inline-block;
+  width: 44px;
+  height: 50px;
+  animation: reduсe 5s ease-in-out infinite;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .item__icecream::before {
+    content: url(../images/mobile/mobile-heart@2x.png);
+  }
+}
+@keyframes reduсe {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
 @media screen and (min-width: 768px) {
+  .section-advantages {
+    padding-bottom: 33px;
+    padding-top: 0;
+  }
   .section-advantages__list {
     display: grid;
     grid-template-columns: 180px 180px 180px;
@@ -66,24 +113,102 @@
     line-height: 55px;
     padding-top: 36px;
   }
+  .item__milk::before {
+    content: url(../images/tablet/tablet-cow.png);
+    width: 33px;
+    height: 50px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .item__milk::before {
+      content: url(../images/tablet/tablet-cow@2x.png);
+    }
+  }
+
+  .item__fruit::before {
+    content: url(../images/tablet/tablet-cup.png);
+    width: 50px;
+    height: 50px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .item__fruit::before {
+      content: url(../images/tablet/tablet-cup@2x.png);
+    }
+  }
+  .item__icecream::before {
+    content: url(../images/tablet/tablet-heart.png);
+    width: 44px;
+    height: 50px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .item__icecream::before {
+      content: url(../images/tablet/tablet-heart@2x.png);
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  .section-advantages {
+    padding-bottom: 100px;
+    padding-top: 40px;
+  }
   .section-advantages__list {
     display: grid;
-    grid-template-columns: 288px 288px 288px;
+    grid-template-columns: 290px 290px 350px;
     grid-gap: 115px;
   }
   .section-advantages__text {
     font-size: 16px;
     line-height: 176%;
     /* or 28px */
-    width: 288px;
+    width: 350px;
     letter-spacing: 0.02em;
   }
   .section-advantages__point {
     font-size: 58px;
     line-height: 66px;
     padding-top: 40px;
+  }
+  .item__milk::before {
+    content: url(../images/laptop/laptop-cow.png);
+    width: 33px;
+    height: 50px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .item__milk::before {
+      content: url(../images/laptop/laptop-cow@2x.png);
+    }
+  }
+
+  .item__fruit::before {
+    content: url(../images/laptop/laptop-cup.png);
+    width: 50px;
+    height: 50px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .item__fruit::before {
+      content: url(../images/laptop/laptop-cup@2x.png);
+    }
+  }
+  .item__icecream::before {
+    content: url(../images/laptop/laptop-heart.png);
+    width: 44px;
+    height: 50px;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .item__icecream::before {
+      content: url(../images/laptop/laptop-heart@2x.png);
+    }
   }
 }
