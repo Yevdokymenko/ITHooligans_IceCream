@@ -230,7 +230,8 @@
         height: 32px;
         background-color: rgba(254, 165, 187, 1);
         border-radius: 50%;
-        transition: background-color var(--animation);
+        transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+            transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
         @media screen and (min-width:768px) {
             width: 34px;
@@ -242,6 +243,7 @@
     &__link:focus {
         background-color: var(--pink-text-color);
         fill: var(--white-text-color);
+        transform: rotateY(360deg);
     }
 
     &__item:not(:last-child) {
