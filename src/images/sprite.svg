@@ -143,5 +143,7 @@
     <symbol id="icon-vector" viewBox="0 0 32 32">
       <path d="M32 3.223 28.777 0 16 12.777 3.223 0 0 3.223 12.777 16 0 28.777 3.223 32 16 19.223 28.777 32 32 28.777 19.223 16 32 3.223z"/>
     </symbol>
+    <symbol id="icon-keyboard_arrow_right" viewBox="0 0 24 24"><path d="M8.578 16.594 13.172 12 8.578 7.406 9.984 6l6 6-6 6z"/>
+    </symbol>
   </defs>
 </svg>
