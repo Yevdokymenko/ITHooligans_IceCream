@@ -1,13 +1,18 @@
 .section-about {
   background-color: var(--bg-color-secondary-pink);
-}
+  background-image: url(../images/mobile/mobile-sectionbg.webp);
 
-.about {
-  background-image: url(../images/mobile/mobile-sectionbg.png);
-  // background-image: url(..images/mobile/mobile-sectionbg@2x.png);
+  // background-image: url(../images/mobile/mobile-sectionbg@2x.webp);
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/mobile-sectionbg@2x.webp);
+
+  }
+
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: 70% 90%;
+  background-position: 70% 85%;
   padding-top: 60px;
   padding-bottom: 7px;
 
@@ -18,15 +23,25 @@
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: url(../images/laptop/laptop-sectionbg.png);
-    // background-image: url(../images/laptop/laptop-sectionbg@2x.png);
-    background-position: 70% 90%;
+    background-image: url(../images/laptop/laptop-sectionbg.webp);
+    // background-image: url(../images/laptop/laptop-sectionbg@2x.webp);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/laptop/laptop-sectionbg@2x.webp);
+    }
+
+    background-position: 70% 70%;
     padding-top: 60px;
     padding-bottom: 39px;
   }
 }
 
+
+
 .section-about__image {
+  margin-right: auto;
+  margin-left: auto;
+
   @media screen and (min-width: 768px) {
     height: 340px;
     width: 340px;
@@ -121,8 +136,13 @@
   }
 }
 
+
+
 .section-about__body {
+  margin-right: auto;
+  margin-left: auto;
   padding-right: 30px;
+  max-width: 320px;
 
   @media screen and (min-width: 768px) {
     display: block;
