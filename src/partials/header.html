@@ -1,5 +1,4 @@
 <!-- *******************  Шапка  ******************  -->
-<div class="" id="start-of-page"></div>
 <header class="header" id="top">
   <div class="container header__container">
     <a href="#" class="logo">
@@ -14,13 +13,15 @@
       <span class="line line-3"></span>
     </button>
 
-    <button class="menu-btn header__btn" type="button" data-form-open-1>Buy now <svg class="menu-btn__icon" width="10" height="15">
+    <button class="menu-btn header__btn" type="button" data-form-open-1>Buy now <svg class="menu-btn__icon" width="10"
+        height="15">
         <use href="./images/sprite.svg#icon-icon-arrow-pink"></use>
       </svg></button>
 
     <div class="menu header__nav">
 
-      <button class="menu-btn" type="button" data-form-open-2>Buy now <svg class="menu-btn__icon" width="10" height="15">
+      <button class="menu-btn" type="button" data-form-open-2>Buy now <svg class="menu-btn__icon" width="10"
+          height="15">
           <use href="./images/sprite.svg#icon-icon-arrow-pink"></use>
         </svg></button>
 
@@ -36,123 +37,107 @@
     </div>
 
   </div>
-</header>
 
+  <!-- ******************** Форма купить ******************** -->
 
-<!-- ******************** Форма купить ******************** -->
+  <div class="hero__backdrop is-hidden" data-form>
+    <div class="header__modal">
+      <button class="hero__btn-close" type="button" aria-label="Кнопка закрыть форму" data-form-close>
+        <svg class="header__close-icon" width="15" height="15">
+          <use href="./images/sprite.svg#icon-vector"></use>
+        </svg>
+      </button>
 
-<div class="hero__backdrop is-hidden" data-form>
-  <div class="header__modal">
-    <button class="hero__btn-close" type="button" aria-label="Кнопка закрыть форму" data-form-close>
-      <svg class="header__close-icon" width="15" height="15">
-        <use href="./images/sprite.svg#icon-vector"></use>
-      </svg>
-    </button>
+      <b class="header__form-title">Choose your pleasure!</b>
 
-    <b class="header__form-title">Choose your pleasure!</b>
+      <form class="form" method="post">
 
-    <form class="form" method="post">
+        <div class="choice-left">
 
-<div class="choice-left">
-
-  <label class="checkbox__group">
-    <input class="checkbox__choice" type="checkbox" name="milkshake" value="milkshake"/>
+          <label class="checkbox__group">
+            <input class="checkbox__choice" type="checkbox" name="milkshake" value="milkshake" />
             <svg class="form__icon" width="40" height="50">
               <use href="./images/sprite.svg#icon-milkshake"></use>
             </svg>
-  </label>
-  <label class="checkbox__group">
-    <input class="checkbox__choice" type="checkbox" name="icecream" value="icecream" checked />
-    <svg class="form__icon" width="40" height="50">
-      <use href="./images/sprite.svg#icon-icecream"></use>
-    </svg>
-  </label>
-  <label class="checkbox__group">
-    <input class="checkbox__choice" type="checkbox" name="coffee" value="coffee" />
-    <svg class="form__icon" width="40" height="50">
-      <use href="./images/sprite.svg#icon-cup"></use>
-    </svg>
-  </label>
-</div>
+          </label>
+          <label class="checkbox__group">
+            <input class="checkbox__choice" type="checkbox" name="icecream" value="icecream" checked />
+            <svg class="form__icon" width="40" height="50">
+              <use href="./images/sprite.svg#icon-icecream"></use>
+            </svg>
+          </label>
+          <label class="checkbox__group">
+            <input class="checkbox__choice" type="checkbox" name="coffee" value="coffee" />
+            <svg class="form__icon" width="40" height="50">
+              <use href="./images/sprite.svg#icon-cup"></use>
+            </svg>
+          </label>
+        </div>
 
-      <div class="choice-right">
+        <div class="choice-right">
 
-<label class="select__group" for="flavours"><span class="form__title">Flavours</span>
-<select class="select__field" id="flavours" name="flavours">
-  <option value="vanilla" selected>Vanilla</option>
-  <option value="shocolate">Chocolate</option>
-  <option value="strawberry">Strawberry</option>
-  <option value="chocolate_chip">Chocolate Chip</option>
-    <option value="eggnog">Eggnog</option>
-    <option value="eskimo">Eskimo</option>
-    <option value="lemon_custard">Lemon Custard</option>
-</select>
-</label>
+          <label class="select__group" for="flavours"><span class="form__title">Flavours</span>
+            <select class="select__field" id="flavours" name="flavours">
+              <option value="vanilla" selected>Vanilla</option>
+              <option value="shocolate">Chocolate</option>
+              <option value="strawberry">Strawberry</option>
+              <option value="chocolate_chip">Chocolate Chip</option>
+              <option value="eggnog">Eggnog</option>
+              <option value="eskimo">Eskimo</option>
+              <option value="lemon_custard">Lemon Custard</option>
+            </select>
+          </label>
 
-<label class="select__group" for="toppings"><span class="form__title">Toppings</span>
-<select class="select__field" id="toppings" name="toppings">
-  <option value="none">None</option>
-  <option value="candy">Candy</option>
-  <option value="caramel_sauce" selected>Caramel sauce</option>
-  <option value="condensed_milk">Condensed milk</option>
-  <option value="whipped_cream">Whipped cream</option>
-  <option value="sprinkles">Sprinkles</option>
-  <option value="chocolate_sauce">Chocolate sauce</option>
-  <option value="chopped_nuts">Chopped nuts</option>
-</select>
-</label>
+          <label class="select__group" for="toppings"><span class="form__title">Toppings</span>
+            <select class="select__field" id="toppings" name="toppings">
+              <option value="none">None</option>
+              <option value="candy">Candy</option>
+              <option value="caramel_sauce" selected>Caramel sauce</option>
+              <option value="condensed_milk">Condensed milk</option>
+              <option value="whipped_cream">Whipped cream</option>
+              <option value="sprinkles">Sprinkles</option>
+              <option value="chocolate_sauce">Chocolate sauce</option>
+              <option value="chopped_nuts">Chopped nuts</option>
+            </select>
+          </label>
 
-<label class="select__group" for="size"><span class="form__title">Size</span>
-<select class="select__field" id="size" name="size">
-  <option value="xs">Extra Small</option>
-  <option value="s">Small</option>
-  <option value="m" selected>Medium</option>
-  <option value="l">Large</option>
-</select>
-</label>
-</div>
+          <label class="select__group" for="size"><span class="form__title">Size</span>
+            <select class="select__field" id="size" name="size">
+              <option value="xs">Extra Small</option>
+              <option value="s">Small</option>
+              <option value="m" selected>Medium</option>
+              <option value="l">Large</option>
+            </select>
+          </label>
+        </div>
 
-<div class="choice-info">
-      <label class="form__group">
-        <span class="form__title">Name</span>
-        <input class="form__field" type="text" name="name" placeholder=" " required>
-      </label>
+        <div class="choice-info">
+          <label class="form__group">
+            <span class="form__title">Name</span>
+            <input class="form__field" type="text" name="name" placeholder=" " required>
+          </label>
 
-      <label class="form__group">
-        <span class="form__title">Telephone</span>
-        <input class="form__field" type="tel" name="tel" placeholder=" " required>
-      </label>
+          <label class="form__group">
+            <span class="form__title">Telephone</span>
+            <input class="form__field" type="tel" name="tel" placeholder=" " required>
+          </label>
 
-      <label class="textarea__group">
-        <span class="form__title">Comment</span>
-        <textarea class="form__textarea form__field" name="comment" placeholder="Enter text"></textarea>
-      </label>
-</div>
+          <label class="textarea__group">
+            <span class="form__title">Comment</span>
+            <textarea class="form__textarea form__field" name="comment" placeholder="Enter text"></textarea>
+          </label>
+        </div>
 
-      <label class="checkbox">
-        <input class="checkbox__field" type="checkbox" name="policy" required>
-        <span class="checkbox__text">I agree to the processing of my data. <a class="checkbox__policy" href=""  target="_blank" rel="noopener noreferrer">Read more...</a></span>
-      </label>
+        <label class="checkbox">
+          <input class="checkbox__field" type="checkbox" name="policy" required>
+          <span class="checkbox__text">I agree to the processing of my data. <a class="checkbox__policy" href=""
+              target="_blank" rel="noopener noreferrer">Read more...</a></span>
+        </label>
 
-      <button class="hero__btn hero__btn--first form__btn" type="submit">Send</button>
-    </form>
+        <button class="hero__btn hero__btn--first form__btn" type="submit">Send</button>
+      </form>
+    </div>
   </div>
-</div>
 
-
-<!-- <script>
-  if (window.innerWidth >= 768) {
-    window.addEventListener('scroll', () => {
-      const startOfPage = document.querySelector('#start-of-page');
-      const header = document.querySelector('.header');
-      const position = startOfPage.getBoundingClientRect();
-      if (position.top < 0 && innerWidth >= 768) {
-        header.classList.add('js-add-background');
-      }
-      if (position.top >= 0 && innerWidth >= 768) {
-        header.classList.remove('js-add-background');
-  }
-  });
-}
-</script> -->
+</header>
 

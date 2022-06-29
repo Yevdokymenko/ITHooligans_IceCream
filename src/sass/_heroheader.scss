@@ -13,7 +13,7 @@
     left: 0;
     width: 100vw;
     z-index: 5;
-    background-color: transparent;
+    background-color: var(--pink-color-third);
   }
 
   @media screen and (min-width: 1200px) {
@@ -74,10 +74,6 @@
 
 body._lock {
   overflow: hidden;
-}
-
-.js-add-background {
-  background-color: var(--pink-color-third);
 }
 
 /******************** Кнопка Меню *********************/
@@ -205,6 +201,9 @@ body._lock .menu-btn.header__btn {
 
 @media screen and (min-width: 768px) {
   .header__btn {
+    position: relative;
+    top: 0;
+    right: 7px;
     display: flex;
     margin-right: 0;
     margin-bottom: 0;
@@ -212,7 +211,7 @@ body._lock .menu-btn.header__btn {
 
   .menu__icon {
     top: 0;
-    left: 40%;
+    left: 39%;
   }
 
   .menu__icon._active {
@@ -442,8 +441,8 @@ body._lock .menu-btn.header__btn {
   background-image: url(../images/tablet/tablet-milk.png);
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     background-image: url(../images/tablet/tablet-milk@2x.png);
   }
 
@@ -456,8 +455,8 @@ body._lock .menu-btn.header__btn {
     background-image: url(../images/laptop/laptop-milk.png);
 
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/laptop/laptop-milk@2x.png);
     }
   }
@@ -479,8 +478,8 @@ body._lock .menu-btn.header__btn {
   background-image: url(../images/tablet/tablet-girl.png);
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     background-image: url(../images/tablet/tablet-girl@2x.png);
   }
 
@@ -495,8 +494,8 @@ body._lock .menu-btn.header__btn {
     background-image: url(../images/laptop/laptop-girl.png);
 
     @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(../images/laptop/laptop-girl@2x.png);
     }
   }
@@ -922,6 +921,7 @@ body.modal-open {
 .choice-left {
   width: 35%;
 }
+
 .choice-right {
   width: 65%;
 }
@@ -954,6 +954,7 @@ body.modal-open {
   cursor: pointer;
   transition: fill var(--animation);
 }
+
 .select__group {
   position: relative;
   display: flex;
@@ -961,6 +962,7 @@ body.modal-open {
   flex-direction: column;
   margin-bottom: 10px;
 }
+
 .select__field {
   display: inline-block;
   border: 1px solid var(--grey-border-color);
@@ -1082,13 +1084,13 @@ body.modal-open {
   cursor: pointer;
 }
 
-.checkbox__choice:checked + .form__icon {
+.checkbox__choice:checked+.form__icon {
   outline-color: transparent;
   fill: var(--btn-active-color);
 }
 
-.checkbox__choice:hover + .form__icon,
-.checkbox__choice:focus + .form__icon {
+.checkbox__choice:hover+.form__icon,
+.checkbox__choice:focus+.form__icon {
   outline-color: var(--btn-active-color);
 }
 
@@ -1106,4 +1108,3 @@ body.modal-open {
   margin-left: auto;
   cursor: pointer;
 }
-
