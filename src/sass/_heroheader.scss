@@ -40,7 +40,7 @@
   right: 0;
   height: 100vh;
   height: 100%;
-  width: 100vw;
+  width: 250px;
   padding-top: 60px;
   background-color: #e17992;
   overflow-y: auto;
@@ -50,7 +50,7 @@
   z-index: 5;
 
   @media screen and (min-width: 768px) {
-    width: 40vw;
+    width: 254px;
     top: 0;
     right: 0;
   }

@@ -6,7 +6,6 @@
   padding-right: 0px;
   margin-right: auto;
   margin-left: auto;
-  width: 100vw;
 
   @media screen and (min-width: 768px) and (max-width: 1200px) {
     background: linear-gradient(
@@ -44,9 +43,11 @@
   height: 100%;
   justify-content: center;
   align-items: center;
-
+  scale: 100%;
   background-color: transparent;
   border-radius: 10%;
+  transition: border-radius 0.5s cubic-bezier(0, 0, 1, 1) 100ms;
+
   overflow: hidden;
 
   &:nth-child(1) {
@@ -81,8 +82,6 @@
     grid-area: 5 / 25 / span 4 / span 4;
   }
 
-  transition: border-radius box-shadow var(--animation);
-
   &:hover,
   &:focus {
     border-radius: 50%;
@@ -91,9 +90,9 @@
 }
 
 .gallery__image {
-  transition: scale var(--animation);
+  transition: background-color 1s cubic-bezier(0, 0, 1, 1) 500ms;
 
   .gallery__item:hover & {
-    transform: scale(120%);
+    transform: scale(130%);
   }
 }
