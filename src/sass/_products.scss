@@ -64,11 +64,10 @@
   letter-spacing: 0.04em;
   color: var(--pink-text-color);
 
-display: block;
-margin-right: auto;
-margin-left: auto;
-width: 200px;
-  
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 200px;
 }
 
 .container-products__title:hover,
@@ -306,8 +305,6 @@ width: 200px;
   background-color: var(--bg-color-secondary-pink);
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.12), 1px 3px 3px rgba(0, 0, 0, 0.14),
     1px 4px 3px rgba(0, 0, 0, 0.2);
-
-  
 }
 
 .products__item:hover .products-item__title {

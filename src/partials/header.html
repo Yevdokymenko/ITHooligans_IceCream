@@ -7,42 +7,63 @@
       </svg>
     </a>
 
-    <button class="menu__icon" type="button" aria-label="Кнопка открыть/закрыть меню">
+    <button
+      class="menu__icon"
+      type="button"
+      aria-label="Кнопка открыть/закрыть меню"
+    >
       <span class="line line-1"></span>
       <span class="line line-2"></span>
       <span class="line line-3"></span>
     </button>
 
-    <button class="menu-btn header__btn" type="button" data-form-open-1>Buy now <svg class="menu-btn__icon" width="10"
-        height="15">
+    <button class="menu-btn header__btn" type="button" data-form-open-1>
+      Buy now
+      <svg class="menu-btn__icon" width="10" height="15">
         <use href="./images/sprite.svg#icon-icon-arrow-pink"></use>
-      </svg></button>
+      </svg>
+    </button>
 
     <div class="menu header__nav">
-
-      <button class="menu-btn" type="button" data-form-open-2>Buy now <svg class="menu-btn__icon" width="10"
-          height="15">
+      <button class="menu-btn" type="button" data-form-open-2>
+        Buy now
+        <svg class="menu-btn__icon" width="10" height="15">
           <use href="./images/sprite.svg#icon-icon-arrow-pink"></use>
-        </svg></button>
+        </svg>
+      </button>
 
       <nav class="nav">
         <ul class="nav__list list">
-          <li class="nav__item"><a href="#home" class="nav__link link nav__link--accent">Home</a></li>
-          <li class="nav__item"><a href="#reviews" class="nav__link link">About us</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link link">How it’s made?</a></li>
-          <li class="nav__item"><a href="#products" class="nav__link link">Our products</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link link">Contact</a></li>
+          <li class="nav__item">
+            <a href="#home" class="nav__link link nav__link--accent">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#reviews" class="nav__link link">About us</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link link">How it’s made?</a>
+          </li>
+          <li class="nav__item">
+            <a href="#products" class="nav__link link">Our products</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link link">Contact</a>
+          </li>
         </ul>
       </nav>
     </div>
-
   </div>
 
   <!-- ******************** Форма купить ******************** -->
 
   <div class="hero__backdrop is-hidden" data-form>
     <div class="header__modal">
-      <button class="hero__btn-close" type="button" aria-label="Кнопка закрыть форму" data-form-close>
+      <button
+        class="hero__btn-close"
+        type="button"
+        aria-label="Кнопка закрыть форму"
+        data-form-close
+      >
         <svg class="header__close-icon" width="15" height="15">
           <use href="./images/sprite.svg#icon-vector"></use>
         </svg>
@@ -51,23 +72,37 @@
       <b class="header__form-title">Choose your pleasure!</b>
 
       <form class="form" method="post">
-
         <div class="choice-left">
-
           <label class="checkbox__group">
-            <input class="checkbox__choice" type="checkbox" name="milkshake" value="milkshake" />
+            <input
+              class="checkbox__choice"
+              type="checkbox"
+              name="milkshake"
+              value="milkshake"
+            />
             <svg class="form__icon" width="40" height="50">
               <use href="./images/sprite.svg#icon-milkshake"></use>
             </svg>
           </label>
           <label class="checkbox__group">
-            <input class="checkbox__choice" type="checkbox" name="icecream" value="icecream" checked />
+            <input
+              class="checkbox__choice"
+              type="checkbox"
+              name="icecream"
+              value="icecream"
+              checked
+            />
             <svg class="form__icon" width="40" height="50">
               <use href="./images/sprite.svg#icon-icecream"></use>
             </svg>
           </label>
           <label class="checkbox__group">
-            <input class="checkbox__choice" type="checkbox" name="coffee" value="coffee" />
+            <input
+              class="checkbox__choice"
+              type="checkbox"
+              name="coffee"
+              value="coffee"
+            />
             <svg class="form__icon" width="40" height="50">
               <use href="./images/sprite.svg#icon-cup"></use>
             </svg>
@@ -75,8 +110,8 @@
         </div>
 
         <div class="choice-right">
-
-          <label class="select__group" for="flavours"><span class="form__title">Flavours</span>
+          <label class="select__group" for="flavours"
+            ><span class="form__title">Flavours</span>
             <select class="select__field" id="flavours" name="flavours">
               <option value="vanilla" selected>Vanilla</option>
               <option value="shocolate">Chocolate</option>
@@ -88,7 +123,8 @@
             </select>
           </label>
 
-          <label class="select__group" for="toppings"><span class="form__title">Toppings</span>
+          <label class="select__group" for="toppings"
+            ><span class="form__title">Toppings</span>
             <select class="select__field" id="toppings" name="toppings">
               <option value="none">None</option>
               <option value="candy">Candy</option>
@@ -101,7 +137,8 @@
             </select>
           </label>
 
-          <label class="select__group" for="size"><span class="form__title">Size</span>
+          <label class="select__group" for="size"
+            ><span class="form__title">Size</span>
             <select class="select__field" id="size" name="size">
               <option value="xs">Extra Small</option>
               <option value="s">Small</option>
@@ -114,30 +151,59 @@
         <div class="choice-info">
           <label class="form__group">
             <span class="form__title">Name</span>
-            <input class="form__field" type="text" name="name" placeholder=" " required>
+            <input
+              class="form__field"
+              type="text"
+              name="name"
+              placeholder=" "
+              required
+            />
           </label>
 
           <label class="form__group">
             <span class="form__title">Telephone</span>
-            <input class="form__field" type="tel" name="tel" placeholder=" " required>
+            <input
+              class="form__field"
+              type="tel"
+              name="tel"
+              placeholder=" "
+              required
+            />
           </label>
 
           <label class="textarea__group">
             <span class="form__title">Comment</span>
-            <textarea class="form__textarea form__field" name="comment" placeholder="Enter text"></textarea>
+            <textarea
+              class="form__textarea form__field"
+              name="comment"
+              placeholder="Enter text"
+            ></textarea>
           </label>
         </div>
 
         <label class="checkbox">
-          <input class="checkbox__field" type="checkbox" name="policy" required>
-          <span class="checkbox__text">I agree to the processing of my data. <a class="checkbox__policy" href=""
-              target="_blank" rel="noopener noreferrer">Read more...</a></span>
+          <input
+            class="checkbox__field"
+            type="checkbox"
+            name="policy"
+            required
+          />
+          <span class="checkbox__text"
+            >I agree to the processing of my data.
+            <a
+              class="checkbox__policy"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Read more...</a
+            ></span
+          >
         </label>
 
-        <button class="hero__btn hero__btn--first form__btn" type="submit">Send</button>
+        <button class="hero__btn hero__btn--first form__btn" type="submit">
+          Send
+        </button>
       </form>
     </div>
   </div>
-
 </header>
-
