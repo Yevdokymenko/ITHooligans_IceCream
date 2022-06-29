@@ -253,7 +253,7 @@
 
   position: absolute;
   top: 0;
-  left: 50%;
+  // left: 50%;
   transform: translate(-50%, -50%);
   content: url(../images/mobile/mobile-product-2.png);
   @media (min-device-pixel-ratio: 2),
@@ -262,7 +262,7 @@
     content: url(../images/mobile/mobile-product-2@2x.png);
     transform: scaleX(50%) scaleY(50%);
     top: -55%;
-    left: -48%;
+    // left: -48%;
   }
 }
 
@@ -275,7 +275,7 @@
 
   position: absolute;
   top: 0;
-  left: 50%;
+  // left: 50%;
   transform: translate(-50%, -50%);
   content: url(../images/mobile/mobile-product-3.png);
   @media (min-device-pixel-ratio: 2),
@@ -284,7 +284,7 @@
     content: url(../images/mobile/mobile-product-3@2x.png);
     transform: scaleX(50%) scaleY(50%);
     top: -60%;
-    left: -50%;
+    // left: -50%;
   }
 }
 
