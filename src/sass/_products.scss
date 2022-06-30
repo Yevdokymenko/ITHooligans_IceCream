@@ -12,13 +12,13 @@
   // width: 100%;
   display: block;
 
-  @media screen and (max-width: 768px) {
-    // min-width: 768px;
-  }
+  // @media screen and (max-width: 768px) {
+  //   min-width: 768px;
+  // }
 
-  @media screen and (max-width: 1200px) {
-    // min-width: 1200px;
-  }
+  // @media screen and (max-width: 1200px) {
+  //   min-width: 1200px;
+  // }
 }
 
 .products__label {
@@ -39,7 +39,7 @@
 }
 
 .products__list {
-  width: 100%;
+  // width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -244,26 +244,29 @@
 
   margin-bottom: 32px;
   margin-top: 32px;
-  width: 200px;
+  // width: 200px;
 
-  @media screen and (min-width: 768px) {
-    width: 160px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   width: 160px;
+  // }
 
-  @media screen and (min-width: 1200px) {
-    width: 241px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   width: 241px;
+  // }
 }
 
 .item__cream {
   background-color: rgba(255, 184, 202, 1);
+  min-width: 280px;
   max-width: 280px;
 
   @media screen and (min-width: 768px) {
+    min-width: 224px;
     max-width: 224px;
   }
 
   @media screen and (min-width: 1200px) {
+    min-width: 368px;
     max-width: 368px;
   }
 }
@@ -321,13 +324,16 @@
 
 .item__coffee {
   background-color: var(--bg-color-third-pink);
+  min-width: 280px;
   max-width: 280px;
 
   @media screen and (min-width: 768px) {
+    min-width: 224px;
     max-width: 224px;
   }
 
   @media screen and (min-width: 1200px) {
+    min-width: 368px;
     max-width: 368px;
   }
 }
@@ -352,13 +358,16 @@
 
 .item__milkshakes {
   background-color: var(--bg-color-green);
+  min-width: 280px;
   max-width: 280px;
 
   @media screen and (min-width: 768px) {
+    min-width: 224px;
     max-width: 224px;
   }
 
   @media screen and (min-width: 1200px) {
+    min-width: 368px;
     max-width: 368px;
   }
 }
@@ -460,7 +469,7 @@
       content: url(../images/tablet/tablet-product-1@2x.png);
       transform: scaleX(50%) scaleY(50%);
       top: -47%;
-      left: -47%;
+      left: -50%;
     }
   }
 
@@ -478,7 +487,7 @@
       content: url(../images/tablet/tablet-product-2@2x.png);
       transform: scaleX(50%) scaleY(50%);
       top: -47%;
-      left: -47%;
+      left: -50%;
     }
   }
 
@@ -496,7 +505,7 @@
       content: url(../images/tablet/tablet-product-3@2x.png);
       transform: scaleX(50%) scaleY(50%);
       top: -47%;
-      left: -47%;
+      left: -50%;
     }
   }
 
@@ -568,7 +577,7 @@
       content: url(../images/laptop/laptop-product-1@2x.png);
       transform: scaleX(50%) scaleY(50%);
       top: -70%;
-      left: -55%;
+      left: -50%;
     }
   }
 
@@ -586,7 +595,7 @@
       content: url(../images/laptop/laptop-product-2@2x.png);
       transform: scaleX(50%) scaleY(50%);
       top: -70%;
-      left: -55%;
+      left: -50%;
     }
   }
 
@@ -604,7 +613,7 @@
       content: url(../images/laptop/laptop-product-3@2x.png);
       transform: scaleX(50%) scaleY(50%);
       top: -70%;
-      left: -55%;
+      left: -50%;
     }
   }
   .container-products {
