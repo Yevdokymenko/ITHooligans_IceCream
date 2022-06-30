@@ -34,10 +34,10 @@ a:focus {
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  width: auto;
+  // width: auto;
   // max-width: 440px;
 
-  width: 100vw;
+  // width: 100%;
   // min-width: 300px;
   margin-top: 0;
   margin-bottom: 0;
@@ -47,11 +47,11 @@ a:focus {
   padding-right: 20px;
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    // width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    // width: 1200px;
   }
 }
 
