@@ -271,17 +271,17 @@
 .item__cream::before {
   display: inline-block;
   content: '';
-  top: 57%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -150%);
-  @media screen and(min-width: 768px) {
-    top: 42%;
+  @media screen and (min-width: 768px) {
+    top: 70%;
   }
-  @media screen and(min-width: 1200px) {
-    top: 62%;
+  @media screen and (min-width: 1200px) {
+    top: 72%;
   }
   position: absolute;
-  @media screen and(min-width: 320px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     width: 280px;
     height: 280px;
     background: url(../images/mobile/mobile-product-1.png);
@@ -293,30 +293,30 @@
       background-size: contain;
     }
   }
-  @media screen and(min-width: 768px) {
-    width: 224px;
-    height: 224px;
-    background: url(../images/tablet/tablet-product-2.png);
-    @media only screen and (min-device-pixel-ratio: 2),
-      only screen and (min-resolution: 192dpi),
-      only screen and(min-resolution: 2dppx) {
-      background-image: url(../images/tablet/tablet-product-2@2x.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-  }
-  @media screen and(min-width: 1200px) {
-    width: 394px;
-    height: 394px;
-    background: url(../images/laptop/laptop-product-3.png);
-    @media only screen and (min-device-pixel-ratio: 2),
-      only screen and (min-resolution: 192dpi),
-      only screen and(min-resolution: 2dppx) {
-      background-image: url(../images/laptop/laptop-product-3@2x.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-  }
+  // @media screen and(min-width: 768px) {
+  //   width: 224px;
+  //   height: 224px;
+  //   background: url(../images/tablet/tablet-product-2.png);
+  //   @media only screen and (min-device-pixel-ratio: 2),
+  //     only screen and (min-resolution: 192dpi),
+  //     only screen and(min-resolution: 2dppx) {
+  //     background-image: url(../images/tablet/tablet-product-2@2x.png);
+  //     background-repeat: no-repeat;
+  //     background-size: contain;
+  //   }
+  // }
+  // @media screen and(min-width: 1200px) {
+  //   width: 394px;
+  //   height: 394px;
+  //   background: url(../images/laptop/laptop-product-3.png);
+  //   @media only screen and (min-device-pixel-ratio: 2),
+  //     only screen and (min-resolution: 192dpi),
+  //     only screen and(min-resolution: 2dppx) {
+  //     background-image: url(../images/laptop/laptop-product-3@2x.png);
+  //     background-repeat: no-repeat;
+  //     background-size: contain;
+  //   }
+  // }
 }
 
 .item__coffee {
