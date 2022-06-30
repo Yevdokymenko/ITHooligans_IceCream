@@ -1,11 +1,16 @@
 /*********************** Шапка  ***********************/
 
+a.active {
+  color: rgba(212, 20, 67, 1);
+}
+
 .header {
   position: relative;
   //   max-width: 1200px;
   //   width: 100vw;
   padding-top: 8px;
   padding-bottom: 8px;
+
   background-color: var(--bg-color-pink);
   //   max-width: 1200px;
 
@@ -15,13 +20,19 @@
     left: 0;
     width: 100vw;
     z-index: 5;
-    background-color: var(--pink-color-third);
+    background-color: transparent;
+    // background-color: var(--pink-color-third);
   }
 
   @media screen and (min-width: 1200px) {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+}
+
+.changeColor {
+  background-color: var(--pink-color-third);
+  transition: all 0.5s ease-in-out;
 }
 
 .logo {
